@@ -1,36 +1,35 @@
 <div class="wrap adtm-containter">
 
         <h2><span class="dashicons dashicons-media-text" style="margin-top: 6px; font-size: 24px;"></span> Ads.txt & App-Ads.txt Manager <?php 
-echo  esc_html__( 'Settings', 'app-ads-txt' ) ;
+echo esc_html__( 'Settings', 'app-ads-txt' );
 ?></h2>
 
     <h2 class="nav-tab-wrapper">
 
         <a href="<?php 
-echo  esc_url( '?page=adtm&tab=adtm-settings' ) ;
+echo esc_url( '?page=adtm&tab=adtm-settings' );
 ?>" 
         class="nav-tab <?php 
-echo  ( $active_tab == 'adtm-settings' ? 'nav-tab-active' : '' ) ;
+echo ( $active_tab == 'adtm-settings' ? 'nav-tab-active' : '' );
 ?>">Settings</a>
         
         <a href="<?php 
-echo  esc_url( '?page=adtm&tab=adtm-faq' ) ;
+echo esc_url( '?page=adtm&tab=adtm-faq' );
 ?>" 
         class="nav-tab <?php 
-echo  ( $active_tab == 'adtm-faq' ? 'nav-tab-active' : '' ) ;
+echo ( $active_tab == 'adtm-faq' ? 'nav-tab-active' : '' );
 ?>">FAQ</a>
         
         <a href="<?php 
-echo  esc_url( '?page=adtm&tab=adtm-recs' ) ;
+echo esc_url( '?page=adtm&tab=adtm-recs' );
 ?>" 
         class="nav-tab <?php 
-echo  ( $active_tab == 'adtm-recs' ? 'nav-tab-active' : '' ) ;
+echo ( $active_tab == 'adtm-recs' ? 'nav-tab-active' : '' );
 ?>">Recommendations</a>
 
     </h2>
 
     <?php 
-
 if ( $active_tab == 'adtm-settings' ) {
     ?>
 
@@ -82,7 +81,7 @@ if ( $active_tab == 'adtm-settings' ) {
         <div class="adtm-alert adtm-warning">
             <span class="closebtn">&times;</span>
             <?php 
-    echo  __( 'Warning: make sure to clear your cache after saving changes.', 'app-ads-txt' ) ;
+    echo __( 'Warning: make sure to clear your cache after saving changes.', 'app-ads-txt' );
     ?>
         </div>
 
@@ -94,7 +93,7 @@ if ( $active_tab == 'adtm-settings' ) {
                 
                 <span class="adtm-label">
                     <?php 
-    echo  esc_html__( 'Delete Settings', 'app-ads-txt' ) ;
+    echo esc_html__( 'Delete Settings', 'app-ads-txt' );
     ?></span>
                 </div>
 
@@ -103,8 +102,8 @@ if ( $active_tab == 'adtm-settings' ) {
                 <label class="adtm-switch">
 
                     <input type="checkbox" id="remove_settings" name="remove_settings" value="remove_settings" <?php 
-    if ( isset( $adtm__options['remove_settings'] ) && !empty($adtm__options['remove_settings']) ) {
-        echo  'checked="checked"' ;
+    if ( isset( $adtm__options['remove_settings'] ) && !empty( $adtm__options['remove_settings'] ) ) {
+        echo 'checked="checked"';
     }
     ?> />
 
@@ -113,7 +112,7 @@ if ( $active_tab == 'adtm-settings' ) {
                 </label>
                 &nbsp;
                 <span><?php 
-    echo  esc_html__( 'Checking this box will remove ALL settings (app-ads.txt & ads.txt) when you deactivate plugin.', 'app-ads-txt' ) ;
+    echo esc_html__( 'Checking this box will remove ALL settings (app-ads.txt & ads.txt) when you deactivate plugin.', 'app-ads-txt' );
     ?></span>
                 
             </div>
@@ -121,7 +120,7 @@ if ( $active_tab == 'adtm-settings' ) {
         </div>
        
         <p class="submit"><input type="submit" name="update" class="button-primary" value="<?php 
-    echo  esc_html__( 'Save Changes', 'app-ads-txt' ) ;
+    echo esc_html__( 'Save Changes', 'app-ads-txt' );
     ?>" /></p>
 
         </form>
@@ -130,20 +129,20 @@ if ( $active_tab == 'adtm-settings' ) {
         <div class="adtm-note" style="margin-top: 5px;">
 
             <p><?php 
-    echo  esc_html__( 'Note: app-ads.txt & ads.txt Manager creates virtual app-ads.txt & ads.txt files. Please make sure that your permalinks are enabled and there is no physical app-ads.txt & ads.txt file on your server. If you\'re using any kind of cache then make sure to clear it after Saving Changes. Please read FAQ for more details.', 'app-ads-txt' ) ;
+    echo esc_html__( 'Note: app-ads.txt & ads.txt Manager creates virtual app-ads.txt & ads.txt files. Please make sure that your permalinks are enabled and there is no physical app-ads.txt & ads.txt file on your server. If you\'re using any kind of cache then make sure to clear it after Saving Changes. Please read FAQ for more details.', 'app-ads-txt' );
     ?></p>
             <p><?php 
-    echo  esc_html__( 'If app-ads.txt is still not working. Please try to save Settings >', 'app-ads-txt' ) ;
+    echo esc_html__( 'If app-ads.txt is still not working. Please try to save Settings >', 'app-ads-txt' );
     ?> <a href="options-permalink.php"><?php 
-    echo  __( 'Permalinks', 'app-ads-txt' ) ;
+    echo __( 'Permalinks', 'app-ads-txt' );
     ?></a>
             &nbsp; <?php 
-    echo  sprintf( wp_kses( __( '(Check <a href="%s" target="_blank">Screenshot</a>)', 'add-tiktok-advertising-pixel' ), array(
+    echo sprintf( wp_kses( __( '(Check <a href="%s" target="_blank">Screenshot</a>)', 'add-tiktok-advertising-pixel' ), array(
         'a' => array(
-        'href'   => array(),
-        'target' => array(),
-    ),
-    ) ), esc_url( plugin_dir_url( __FILE__ ) . '/assets/imgs/permalinks.png' ) ) ;
+            'href'   => array(),
+            'target' => array(),
+        ),
+    ) ), esc_url( plugin_dir_url( __FILE__ ) . '/assets/imgs/permalinks.png' ) );
     ?></p>
 
         </div>
@@ -151,7 +150,7 @@ if ( $active_tab == 'adtm-settings' ) {
         <div class="adtm-alert adtm-success">
             <span class="closebtn">&times;</span>
             <?php 
-    echo  __( 'Make sure search engines can crawl your .txt files. Optimize your robots.txt with', 'app-ads-txt' ) ;
+    echo __( 'Make sure search engines can crawl your .txt files. Optimize your robots.txt with', 'app-ads-txt' );
     ?> <a href="https://wordpress.org/plugins/better-robots-txt/">Better Robots.txt</a>
         </div>
         
@@ -163,7 +162,7 @@ if ( $active_tab == 'adtm-settings' ) {
                 <span class="dashicons dashicons-editor-help"></span>
                 <span class="adtm-tooltiptext">
                     <?php 
-    echo  __( 'Just a sample for copy-paste purpose. Make sure to change itaccordingaly inside custom rules box.', 'app-ads-txt' ) ;
+    echo __( 'Just a sample for copy-paste purpose. Make sure to change itaccordingaly inside custom rules box.', 'app-ads-txt' );
     ?>
                 </span>
             </div>
@@ -191,7 +190,6 @@ outbrain.com, pubID, DIRECT
     // Sidebar
     include dirname( __FILE__ ) . '/sidebar.php';
 }
-
 if ( $active_tab == 'adtm-ads-txt' ) {
     include dirname( __FILE__ ) . '../ads-txt-admin.php';
 }

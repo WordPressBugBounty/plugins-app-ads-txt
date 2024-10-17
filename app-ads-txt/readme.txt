@@ -3,16 +3,14 @@ Contributors: the-rock, pagup, freemius
 Tags: Adstxt, App-adstxt, Ads.txt, Ads, Advertising
 Requires at least: 4.1
 Requires PHP: 5.6
-Tested up to: 6.6
-WC tested up to: 3.5.1
-Stable tag: 1.1.7.1
+Tested up to: 6.1
+Stable tag: 1.1.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 App-ads.txt & Ads.txt manager allows you to create, manage & publish your app-ads.txt & ads.txt file from your WordPress dashboard. Avoid revenue loss & better Manage your .txt file.
 
 == Description ==
-
 
 Ad partners are frequently adding new demand sources to their Ads.txt & App-ads.txt lists of authorized sellers.
 
@@ -163,3 +161,7 @@ Source : https://support.vungle.com/hc/en-us/articles/360029177591-App-ads-text
 
 = 1.1.7.1 =
 * 🐛 FIX: Security fix
+
+= 1.1.8 =
+* 🐛 FIX: XSS Security patch
+* 👌 IMPROVE: Updated freemius to latest v2.8.1
