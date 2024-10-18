@@ -3,7 +3,7 @@ Contributors: the-rock, pagup, freemius
 Tags: Adstxt, App-adstxt, Ads.txt, Ads, Advertising
 Requires at least: 4.1
 Requires PHP: 5.6
-Tested up to: 6.1
+Tested up to: 6.6
 Stable tag: 1.1.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
