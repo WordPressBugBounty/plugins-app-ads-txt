@@ -4,7 +4,7 @@
 * Plugin Name: Ads.txt & App-ads.txt Manager
 * Description: App-ads.txt & Ads.txt manager allows you to create, manage & publish your app-ads.txt & ads.txt files from your WordPress dashboard.
 * Author: Pagup
-* Version: 1.1.8
+* Version: 1.1.9
 * Author URI: https://pagup.com/
 * Text Domain: app-ads-txt
 * Domain Path: /languages/
