@@ -1,5 +1,12 @@
 @import "../start";
 @import "themes";
+@import "switch";
+
+body.fs-loading {
+    &, * {
+        cursor: wait !important;
+    }
+}
 
 #fs_frame
 {
@@ -41,6 +48,14 @@
     {
         margin:  .5em 0;
         padding: 2px;
+
+        .fs-trial-message-container
+        {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
     }
 
     .fs-close
@@ -78,7 +93,7 @@
         top:         100%;
         bottom:      auto;
         right:       auto;
-        @include border-radius(0 0 3px 3px);
+        border-radius: 0 0 3px 3px;
         left:        10px;
         font-size:   12px;
         font-weight: bold;
@@ -93,6 +108,33 @@ div.fs-notice
     &.promotion
     {
         display: block !important;
+    }
+}
+
+#fs_connect .fs-error,
+.fs-modal .notice-error,
+.fs-notice.error {
+    ol,
+    .fs-api-request-error-show-details-link,
+    .fs-api-request-error-details {
+        text-align: left;
+    }
+
+    ol {
+        list-style-type: disc;
+    }
+
+    .fs-api-request-error-show-details-link {
+        text-decoration: none;
+        color: #2271b1;
+        box-shadow: none;
+    }
+
+    .fs-api-request-error-details {
+        border: 1px solid #ccc;
+        padding: 5px;
+        overflow: auto;
+        max-height: 150px;
     }
 }
 
@@ -117,13 +159,13 @@ div.fs-notice
     background: rgb(235, 253, 235);
     padding:    10px 20px;
     color:      green;
-    z-index:    9999;
-    @include box-shadow(0 2px 2px rgba(6, 113, 6, 0.3));
-    @include opacity(0.95);
+    z-index:    9989; // 1 less than WordPress' #adminmenuwrap
+    box-shadow: 0 2px 2px rgba(6, 113, 6, 0.3);
+    opacity: 0.95;
 
     &:hover
     {
-        @include opacity(1);
+        opacity: 1;
     }
 
     a.fs-security-proof
@@ -147,7 +189,7 @@ div.fs-notice
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1250px) {
     #fs_promo_tab
     {
         display: none;
@@ -209,6 +251,7 @@ span.fs-submenu-item.fs-sub:before
     display:         inline-block;
     background:      url('/wp-admin/images/wpspin_light-2x.gif');
     background-size: contain;
+    margin-bottom:   -2px;
 }
 
 .wrap.fs-section {

@@ -3,8 +3,8 @@ Contributors: the-rock, pagup, freemius
 Tags: Adstxt, App-adstxt, Ads.txt, Ads, Advertising
 Requires at least: 4.1
 Requires PHP: 5.6
-Tested up to: 6.9
-Stable tag: 1.1.9
+Tested up to: 7.0
+Stable tag: 1.1.10
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -100,6 +100,9 @@ Source : https://support.vungle.com/hc/en-us/articles/360029177591-App-ads-text
 2. App-ads.txt & Ads.txt Manager
 
 == Changelog ==
+
+= 1.1.10 =
+* Update Freemius SDK to 2.13.1.
 
 = 1.0.0 =
 * Initial release.

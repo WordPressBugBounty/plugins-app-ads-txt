@@ -11,6 +11,20 @@
 	display: none;
 	background: rgba(0, 0, 0, 0.6);
 
+	@media (min-width: 961px) {
+		padding-left: 160px;
+
+		.rtl & {
+			padding-left: 0;
+			padding-right: 160px;
+		}
+	}
+
+	.dashicons
+	{
+		vertical-align: middle;
+	}
+
 	.fs-modal-dialog {
 		background: transparent;
 		position: absolute;
@@ -110,9 +124,9 @@
             top: 12px;
             cursor: pointer;
             color: #bbb;
-            @include border-radius(20px);
+            border-radius: 20px;
             padding: 3px;
-            @include transition(all 0.2s ease-in-out);
+            transition: all 0.2s ease-in-out;
 
             &:hover {
                 color: #fff;
@@ -159,7 +173,7 @@
 		> .button {
 			margin: 0 7px;
 
-			&:first-child {
+			&:last-of-type {
 				margin: 0;
 			}
 		}
@@ -186,6 +200,10 @@
                 left: 20px;
             }
         }
+
+		.fs-modal-footer {
+			text-align: left;
+		}
     }
 }
 
