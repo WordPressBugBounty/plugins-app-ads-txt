@@ -4,7 +4,7 @@
 * Plugin Name: Ads.txt & App-ads.txt Manager
 * Description: App-ads.txt & Ads.txt manager allows you to create, manage & publish your app-ads.txt & ads.txt files from your WordPress dashboard.
 * Author: Pagup
-* Version: 1.1.10
+* Version: 1.1.11
 * Author URI: https://pagup.com/
 * Text Domain: app-ads-txt
 * Domain Path: /languages/
@@ -106,7 +106,7 @@ if ( function_exists( 'adtm__fs' ) ) {
         // end function __construct()
         // quick setting link in plugin section
         function adtm__setting_link( $links ) {
-            $settings_link = '<a href="options-general.php?page=adtm">Settings</a>';
+            $settings_link = '<a href="options-general.php?page=adtm">' . esc_html__( 'Settings', 'app-ads-txt' ) . '</a>';
             array_unshift( $links, $settings_link );
             return $links;
         }

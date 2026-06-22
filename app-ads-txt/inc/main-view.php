@@ -11,21 +11,21 @@ echo esc_url( '?page=adtm&tab=adtm-settings' );
 ?>" 
         class="nav-tab <?php 
 echo ( $active_tab == 'adtm-settings' ? 'nav-tab-active' : '' );
-?>">Settings</a>
+?>"><?php echo esc_html__( 'Settings', 'app-ads-txt' ); ?></a>
         
         <a href="<?php 
 echo esc_url( '?page=adtm&tab=adtm-faq' );
 ?>" 
         class="nav-tab <?php 
 echo ( $active_tab == 'adtm-faq' ? 'nav-tab-active' : '' );
-?>">FAQ</a>
+?>"><?php echo esc_html__( 'FAQ', 'app-ads-txt' ); ?></a>
         
         <a href="<?php 
 echo esc_url( '?page=adtm&tab=adtm-recs' );
 ?>" 
         class="nav-tab <?php 
 echo ( $active_tab == 'adtm-recs' ? 'nav-tab-active' : '' );
-?>">Recommendations</a>
+?>"><?php echo esc_html__( 'Recommendations', 'app-ads-txt' ); ?></a>
 
     </h2>
 
@@ -52,8 +52,8 @@ if ( $active_tab == 'adtm-settings' ) {
         <div class="adtm-tabs">
 
             <ul class="tabs">
-                <li class="tab-link current" data-tab="tab-1">Ads.txt Settings</li>
-                <li class="tab-link" data-tab="tab-2">App-Ads.txt Settings</li>
+                <li class="tab-link current" data-tab="tab-1"><?php echo esc_html__( 'Ads.txt Settings', 'app-ads-txt' ); ?></li>
+                <li class="tab-link" data-tab="tab-2"><?php echo esc_html__( 'App-Ads.txt Settings', 'app-ads-txt' ); ?></li>
             </ul>
 
             <!-- START App-Ads.txt TAB -->
@@ -137,7 +137,7 @@ if ( $active_tab == 'adtm-settings' ) {
     echo __( 'Permalinks', 'app-ads-txt' );
     ?></a>
             &nbsp; <?php 
-    echo sprintf( wp_kses( __( '(Check <a href="%s" target="_blank">Screenshot</a>)', 'add-tiktok-advertising-pixel' ), array(
+    echo sprintf( wp_kses( __( '(Check <a href="%s" target="_blank">Screenshot</a>)', 'app-ads-txt' ), array(
         'a' => array(
             'href'   => array(),
             'target' => array(),
@@ -157,7 +157,7 @@ if ( $active_tab == 'adtm-settings' ) {
         <br />
         
         <div class="adtm-row">
-            <label>Common app-ads.txt snippet:</label>
+            <label><?php echo esc_html__( 'Common app-ads.txt snippet:', 'app-ads-txt' ); ?></label>
             <div class="adtm-tooltip">
                 <span class="dashicons dashicons-editor-help"></span>
                 <span class="adtm-tooltiptext">

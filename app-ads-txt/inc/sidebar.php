@@ -3,7 +3,7 @@
     <div class="adtm-sidebar">
 
         <div class="box">
-            <h2><?php echo __( 'Boost your SEO with Meta Tags', 'better-robots-txt' ); ?></h2>
+            <h2><?php echo __( 'Boost your SEO with Meta Tags', 'app-ads-txt' ); ?></h2>
             <p><?php echo __( 'Auto-populate custom SEO META Keywords everywhere on your website based on Post titles, Yoast/Rank Math Focus keywords, and more. Add custom META tags to help Search engines such as Google to understand additional information about the webpage (for ranking purposes).', 'app-ads-txt' ); ?></p>
             <p><a href="https://wordpress.org/plugins/meta-tags-for-seo/" target="_blank" class="adtm-btn"><?php echo __( 'Read More &raquo;', 'app-ads-txt' ); ?></a></p>
         </div>

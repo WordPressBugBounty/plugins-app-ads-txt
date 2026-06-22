@@ -16,7 +16,7 @@
 
         <div class="adtm-alert adtm-info">
             <span class="closebtn">&times;</span> 
-            <?php echo "App-Ads.txt is a premium feature. " . $get_pro . " " . __( 'App-Ads.txt', 'app-ads-txt' ); ?>
+            <?php echo esc_html__( 'App-Ads.txt is a premium feature.', 'app-ads-txt' ) . ' ' . $get_pro . ' ' . esc_html__( 'App-Ads.txt', 'app-ads-txt' ); ?>
         </div>
 
         <div class="adtm-repeater repeat-section" id="app_ads_repeater" data-field-id="sample_txt_field_id" data-items-index-array="[1]">
@@ -27,27 +27,27 @@
 
                 <table class="adtm-table"><tr>
                     <td>
-                        <label>Ad Source Domain</label>
+                        <label><?php echo esc_html__( 'Ad Source Domain', 'app-ads-txt' ); ?></label>
                         <div class="adtm-tooltip">
                             <span class="dashicons dashicons-editor-help"></span>
                             <span class="adtm-tooltiptext">
                                 <?php echo  __( 'The canonical domain name of the SSP, Exchange, system that bidders connect to (they publishes a document detailing what domain name to use).', 'app-ads-txt' ); ?>
                             </span>
                         </div>
-                        <input class="repeat-el adtm-disabled" type="text" value="" id="sample_txt_field_id[1][domain]" name="sample_txt_field_id[1][domain]" placeholder="Ad Source Domain" disabled>
+                        <input class="repeat-el adtm-disabled" type="text" value="" id="sample_txt_field_id[1][domain]" name="sample_txt_field_id[1][domain]" placeholder="<?php echo esc_attr__( 'Ad Source Domain', 'app-ads-txt' ); ?>" disabled>
                     </td>
                     <td>
-                        <label>Publisher ID</label>
+                        <label><?php echo esc_html__( 'Publisher ID', 'app-ads-txt' ); ?></label>
                         <div class="adtm-tooltip">
                             <span class="dashicons dashicons-editor-help"></span>
                             <span class="adtm-tooltiptext">
                                 <?php echo  __( ' This must contain the same value used in transactions (i.e. OpenRTB bid requests) in the field specified by the SSP/exchange (For OpenRTB = publisher ID | For OpenDirect = publisher’s organization ID).', 'app-ads-txt' ); ?>
                             </span>
                         </div>
-                        <input class="repeat-el adtm-disabled" type="text" value="" id="sample_txt_field_id[1][pub]" name="sample_txt_field_id[1][pub]" placeholder="Publisher ID" disabled>
+                        <input class="repeat-el adtm-disabled" type="text" value="" id="sample_txt_field_id[1][pub]" name="sample_txt_field_id[1][pub]" placeholder="<?php echo esc_attr__( 'Publisher ID', 'app-ads-txt' ); ?>" disabled>
                     </td>
                     <td>
-                        <label>Type of Relationship</label>
+                        <label><?php echo esc_html__( 'Type of Relationship', 'app-ads-txt' ); ?></label>
                         <div class="adtm-tooltip">
                             <span class="dashicons dashicons-editor-help"></span>
                             <span class="adtm-tooltiptext">
@@ -55,20 +55,20 @@
                             </span>
                         </div>
                         <select class="repeat-el adtm-disabled" name="sample_txt_field_id[1][relation]">
-                            <option value="" selected>Select Relationship</option>
-                            <option value="DIRECT" disabled>Direct</option>
-                            <option value="RESELLER" disabled>Reseller</option>
+                            <option value="" selected><?php echo esc_html__( 'Select Relationship', 'app-ads-txt' ); ?></option>
+                            <option value="DIRECT" disabled><?php echo esc_html__( 'Direct', 'app-ads-txt' ); ?></option>
+                            <option value="RESELLER" disabled><?php echo esc_html__( 'Reseller', 'app-ads-txt' ); ?></option>
                         </select>
                     </td>
                     <td>
-                        <label>Ad Source ID</label>
+                        <label><?php echo esc_html__( 'Ad Source ID', 'app-ads-txt' ); ?></label>
                         <div class="adtm-tooltip">
                             <span class="dashicons dashicons-editor-help"></span>
                             <span class="adtm-tooltiptext">
                                 <?php echo  __( 'An ID that uniquely identifies the advertising system within a certification authority.', 'app-ads-txt' ); ?>
                             </span>
                         </div>
-                        <input class="repeat-el adtm-disabled" type="text" value="" id="sample_txt_field_id[1][cert]" name="sample_txt_field_id[1][cert]" placeholder="Ad Source ID" disabled>
+                        <input class="repeat-el adtm-disabled" type="text" value="" id="sample_txt_field_id[1][cert]" name="sample_txt_field_id[1][cert]" placeholder="<?php echo esc_attr__( 'Ad Source ID', 'app-ads-txt' ); ?>" disabled>
                     </td>
                 </tr></table>
 
@@ -87,7 +87,7 @@
 <div class="adtm-row">
     <div class="adtm-block">
 
-        <label>(for expert) Copy-paste all rules if you already have them ready to use. Then save.</label>
+        <label><?php echo esc_html__( '(for expert) Copy-paste all rules if you already have them ready to use. Then save.', 'app-ads-txt' ); ?></label>
 
         <div class="adtm-tooltip">
             <span class="dashicons dashicons-editor-help"></span>
