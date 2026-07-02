@@ -4,7 +4,7 @@ Tags: Adstxt, App-adstxt, Ads.txt, Ads, Advertising
 Requires at least: 4.1
 Requires PHP: 5.6
 Tested up to: 7.0
-Stable tag: 1.1.11
+Stable tag: 1.1.12
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -100,6 +100,9 @@ Source : https://support.vungle.com/hc/en-us/articles/360029177591-App-ads-text
 2. App-ads.txt & Ads.txt Manager
 
 == Changelog ==
+
+= 1.1.12 =
+* Add a local file status panel and JSON evidence export for ads.txt and app-ads.txt.
 
 = 1.1.11 =
 * Add full translation coverage for 10 core locales.

@@ -31,6 +31,8 @@ class adtm__settings {
 
         add_action( 'admin_enqueue_scripts', 'adtm__styles' );
         add_action( 'admin_menu', array(&$this, 'adtm__admin_menu') );
+        add_action( 'admin_post_adtm_evidence_run', array(&$this, 'adtm__evidence_run') );
+        add_action( 'admin_post_adtm_evidence_export', array(&$this, 'adtm__evidence_export') );
     }
 
     function adtm__admin_menu() {
@@ -41,6 +43,66 @@ class adtm__settings {
             'adtm',
             array(&$this, 'adtm__settings_page')
         );
+    }
+
+    function adtm__evidence_run() {
+        if ( function_exists( 'current_user_can' ) && !current_user_can( 'manage_options' ) ) {
+            wp_die( esc_html__( 'Sorry, not allowed...', 'app-ads-txt' ) );
+        }
+
+        check_admin_referer( 'adtm_evidence_run' );
+
+        global $adtm;
+
+        Pagup\AppAdsTxt\Evidence\App_Ads_Evidence_Store::run(
+            $adtm->adtm__options(),
+            home_url( '/' ),
+            $this->adtm__plugin_version(),
+            ABSPATH
+        );
+
+        wp_safe_redirect( admin_url( 'options-general.php?page=adtm&tab=adtm-settings' ) );
+        exit;
+    }
+
+    function adtm__evidence_export() {
+        if ( function_exists( 'current_user_can' ) && !current_user_can( 'manage_options' ) ) {
+            wp_die( esc_html__( 'Sorry, not allowed...', 'app-ads-txt' ) );
+        }
+
+        check_admin_referer( 'adtm_evidence_export' );
+
+        $payload = Pagup\AppAdsTxt\Evidence\App_Ads_Evidence_Store::get_latest();
+
+        if ( ! $payload ) {
+            global $adtm;
+            $payload = Pagup\AppAdsTxt\Evidence\App_Ads_Evidence_Store::run(
+                $adtm->adtm__options(),
+                home_url( '/' ),
+                $this->adtm__plugin_version(),
+                ABSPATH
+            );
+        }
+
+        $json = Pagup\AppAdsTxt\Evidence\App_Ads_Evidence_Export::encode( $payload );
+        $filename = 'pagup-app-ads-evidence-' . gmdate( 'Ymd-His' ) . '.json';
+
+        nocache_headers();
+        header( 'Content-Type: application/json; charset=utf-8' );
+        header( 'Content-Disposition: attachment; filename="' . $filename . '"' );
+        // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- JSON is encoded and sent with application/json headers.
+        echo $json;
+        exit;
+    }
+
+    function adtm__plugin_version() {
+        if ( ! function_exists( 'get_plugin_data' ) ) {
+            require_once ABSPATH . 'wp-admin/includes/plugin.php';
+        }
+
+        $plugin_data = get_plugin_data( dirname( __FILE__ ) . '/app-ads-txt.php', false, false );
+
+        return isset( $plugin_data['Version'] ) ? $plugin_data['Version'] : '';
     }
 
     // Settings function
@@ -92,16 +154,12 @@ class adtm__settings {
             $adtm__options['remove_settings'] = ( isset( $_POST['remove_settings'] ) && in_array( $_POST['remove_settings'], $adtm__safe ) ? sanitize_text_field( $_POST['remove_settings'] ) : false );
             // Ads.txt Settings
             $adtm__options['ads-txt'] = ( isset( $_POST['ads_txt_field_id'] ) && !empty( $_POST['ads_txt_field_id'] ) ? sanitize_adtm__array( $_POST['ads_txt_field_id'] ) : "" );
-            $ads_txt_custom = sanitize_textarea_field( $_POST['ads-txt-custom'] );
+            $ads_txt_custom = ( isset( $_POST['ads-txt-custom'] ) ? sanitize_textarea_field( wp_unslash( $_POST['ads-txt-custom'] ) ) : "" );
             $adtm__options['ads-txt-custom'] = ( isset( $_POST['ads-txt-custom'] ) && !empty( $_POST['ads-txt-custom'] ) ? $ads_txt_custom : "" );
             update_option( 'app-ads-txt', $adtm__options );
             // update options
             echo '<div class="notice notice-success is-dismissible"><p><strong>' . esc_html__( 'Settings saved.', 'app-ads-txt' ) . '</strong></p></div>';
         }
-        // get host url for app-ads.txt
-        $protocol = ( !empty( $_SERVER['HTTPS'] ) && $_SERVER['HTTPS'] != 'off' || $_SERVER['SERVER_PORT'] == 443 ? "https://" : "http://" );
-        $host = $_SERVER['HTTP_HOST'];
-        $host_url = $protocol . $host;
         ?>
 
     <div class="wrap adtm-containter">
@@ -230,6 +288,8 @@ class adtm__settings {
             ?>" /></p>
 
         </form>
+
+        <?php include dirname( __FILE__ ) . '/admin-ui-inc/evidence-panel.php'; ?>
 
                                     
         <div class="adtm-note" style="margin-top: 5px;">

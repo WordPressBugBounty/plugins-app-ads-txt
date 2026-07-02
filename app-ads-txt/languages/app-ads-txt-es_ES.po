@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ads.txt & App-ads.txt Manager\n"
 "Report-Msgid-Bugs-To: info@pagup.com\n"
-"POT-Creation-Date: 2026-06-22 11:14-0400\n"
+"POT-Creation-Date: 2026-07-01 20:44-0400\n"
 "PO-Revision-Date: 2021-05-27 20:38+0000\n"
 "Last-Translator: Gautier Dorval\n"
 "Language-Team: Spanish (Spain)\n"
@@ -14,296 +14,73 @@ msgstr ""
 "X-Generator: Loco https://localise.biz/\n"
 "X-Loco-Version: 2.5.2; wp-5.7.2\n"
 
-#: admin-ui-inc\ads-txt-inc.php:5
-#: premium\app-ads-txt-premium\admin-ui-inc\ads-txt-inc.php:5
-#, php-format
-msgid ""
-"Once your settings are applied, please check your ads.txt files here. <a "
-"href=\"%s\" target=\"_blank\" class=\"note-btn\">Your ads.txt</a>"
-msgstr ""
-"Una vez aplicada la configuración, verifique sus archivos ads.txt aquí. <a "
-"href=\"%s\" target=\"_blank\" class=\"note-btn\">Su ads.txt</a>"
+#: app-ads-txt-admin.php:50 app-ads-txt-admin.php:70
+#: premium/app-ads-txt-premium/app-ads-txt-admin.php:60
+#: premium/app-ads-txt-premium/app-ads-txt-admin.php:81
+msgid "Sorry, not allowed..."
+msgstr "Lo sentimos, no tienes permisos..."
 
-#: admin-ui-inc\ads-txt-inc.php:15
-#: premium\app-ads-txt-premium\admin-ui-inc\ads-txt-inc.php:15
-msgid "Add rules for Ads.txt, one line at a time. Then save"
-msgstr "Agregue reglas para Ads.txt, una línea a la vez. Entonces guarda"
-
-#: admin-ui-inc\ads-txt-inc.php:38 admin-ui-inc\ads-txt-inc.php:114
-#: admin-ui-inc\ads-txt-inc.php:121 admin-ui-inc\app-ads-txt-inc.php:30
-#: admin-ui-inc\app-ads-txt-inc.php:37
-#: premium\app-ads-txt-premium\admin-ui-inc\ads-txt-inc.php:38
-#: premium\app-ads-txt-premium\admin-ui-inc\ads-txt-inc.php:114
-#: premium\app-ads-txt-premium\admin-ui-inc\ads-txt-inc.php:121
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc__premium_only.php:38
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc__premium_only.php:114
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc__premium_only.php:121
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc.php:30
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc.php:37
-msgid "Ad Source Domain"
-msgstr "Dominio de la fuente publicitaria"
-
-#: admin-ui-inc\ads-txt-inc.php:42 admin-ui-inc\ads-txt-inc.php:118
-#: admin-ui-inc\app-ads-txt-inc.php:34
-#: premium\app-ads-txt-premium\admin-ui-inc\ads-txt-inc.php:42
-#: premium\app-ads-txt-premium\admin-ui-inc\ads-txt-inc.php:118
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc__premium_only.php:42
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc__premium_only.php:118
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc.php:34
-msgid ""
-"The canonical domain name of the SSP, Exchange, system that bidders connect "
-"to (they publishes a document detailing what domain name to use)."
-msgstr ""
-"El nombre de dominio canónico del SSP, Exchange, sistema al que se conectan "
-"los postores (publican un documento que detalla qué nombre de dominio usar)."
-
-#: admin-ui-inc\ads-txt-inc.php:49
-#: premium\app-ads-txt-premium\admin-ui-inc\ads-txt-inc.php:49
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc__premium_only.php:49
-msgid "Domain of Ads System"
-msgstr "Dominio del sistema de anuncios"
-
-#: admin-ui-inc\ads-txt-inc.php:52 admin-ui-inc\ads-txt-inc.php:63
-#: admin-ui-inc\ads-txt-inc.php:124 admin-ui-inc\ads-txt-inc.php:131
-#: admin-ui-inc\app-ads-txt-inc.php:40 admin-ui-inc\app-ads-txt-inc.php:47
-#: premium\app-ads-txt-premium\admin-ui-inc\ads-txt-inc.php:52
-#: premium\app-ads-txt-premium\admin-ui-inc\ads-txt-inc.php:63
-#: premium\app-ads-txt-premium\admin-ui-inc\ads-txt-inc.php:124
-#: premium\app-ads-txt-premium\admin-ui-inc\ads-txt-inc.php:131
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc__premium_only.php:52
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc__premium_only.php:63
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc__premium_only.php:124
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc__premium_only.php:131
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc.php:40
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc.php:47
-msgid "Publisher ID"
-msgstr "ID del editor"
-
-#: admin-ui-inc\ads-txt-inc.php:56
-#: premium\app-ads-txt-premium\admin-ui-inc\ads-txt-inc.php:56
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc__premium_only.php:56
-msgid ""
-"This must contain the same value used in transactions (i.e. OpenRTB bid "
-"requests) in the field specified by the SSP/exchange (For OpenRTB = "
-"publisher ID | For OpenDirect = publisher's organization ID)."
-msgstr "Debe contener el mismo valor usado en las transacciones (p. ej., solicitudes de puja OpenRTB) en el campo especificado por el SSP/exchange (para OpenRTB = ID del editor | para OpenDirect = ID de la organización del editor)."
-
-#: admin-ui-inc\ads-txt-inc.php:66 admin-ui-inc\ads-txt-inc.php:134
-#: admin-ui-inc\app-ads-txt-inc.php:50
-#: premium\app-ads-txt-premium\admin-ui-inc\ads-txt-inc.php:66
-#: premium\app-ads-txt-premium\admin-ui-inc\ads-txt-inc.php:134
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc__premium_only.php:66
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc__premium_only.php:134
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc.php:50
-msgid "Type of Relationship"
-msgstr "Tipo de relación"
-
-#: admin-ui-inc\ads-txt-inc.php:70
-#: premium\app-ads-txt-premium\admin-ui-inc\ads-txt-inc.php:70
-msgid ""
-"Your direct demand partners should be listed as \"direct.\" If your partners "
-"are using third-party resellers to sell your inventory, such providers "
-"should be listed as \"reseller.\" In any case, you should not add any "
-"provider to your ads-txt.txt file unless you or your partner have a direct "
-"relationship with them."
-msgstr "Tus socios de demanda directa deben figurar como \"direct\". Si tus socios usan revendedores externos para vender tu inventario, esos proveedores deben figurar como \"reseller\". En cualquier caso, no añadas ningún proveedor a tu archivo ads-txt.txt a menos que tú o tu socio tengáis una relación directa con él."
-
-#: admin-ui-inc\ads-txt-inc.php:74 admin-ui-inc\ads-txt-inc.php:142
-#: admin-ui-inc\app-ads-txt-inc.php:58
-#: premium\app-ads-txt-premium\admin-ui-inc\ads-txt-inc.php:74
-#: premium\app-ads-txt-premium\admin-ui-inc\ads-txt-inc.php:142
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc__premium_only.php:74
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc__premium_only.php:142
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc.php:58
-msgid "Select Relationship"
-msgstr "Seleccionar relación"
-
-#: admin-ui-inc\ads-txt-inc.php:75 admin-ui-inc\ads-txt-inc.php:143
-#: admin-ui-inc\app-ads-txt-inc.php:59
-#: premium\app-ads-txt-premium\admin-ui-inc\ads-txt-inc.php:75
-#: premium\app-ads-txt-premium\admin-ui-inc\ads-txt-inc.php:143
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc__premium_only.php:75
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc__premium_only.php:143
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc.php:59
-msgid "Direct"
-msgstr "Directo"
-
-#: admin-ui-inc\ads-txt-inc.php:76 admin-ui-inc\ads-txt-inc.php:144
-#: admin-ui-inc\app-ads-txt-inc.php:60
-#: premium\app-ads-txt-premium\admin-ui-inc\ads-txt-inc.php:76
-#: premium\app-ads-txt-premium\admin-ui-inc\ads-txt-inc.php:144
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc__premium_only.php:76
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc__premium_only.php:144
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc.php:60
-msgid "Reseller"
-msgstr "Revendedor"
-
-#: admin-ui-inc\ads-txt-inc.php:80 admin-ui-inc\ads-txt-inc.php:91
-#: admin-ui-inc\ads-txt-inc.php:148 admin-ui-inc\ads-txt-inc.php:155
-#: admin-ui-inc\app-ads-txt-inc.php:64 admin-ui-inc\app-ads-txt-inc.php:71
-#: premium\app-ads-txt-premium\admin-ui-inc\ads-txt-inc.php:80
-#: premium\app-ads-txt-premium\admin-ui-inc\ads-txt-inc.php:91
-#: premium\app-ads-txt-premium\admin-ui-inc\ads-txt-inc.php:148
-#: premium\app-ads-txt-premium\admin-ui-inc\ads-txt-inc.php:155
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc__premium_only.php:80
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc__premium_only.php:91
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc__premium_only.php:148
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc__premium_only.php:155
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc.php:64
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc.php:71
-msgid "Ad Source ID"
-msgstr "ID de la fuente publicitaria"
-
-#: admin-ui-inc\ads-txt-inc.php:84 admin-ui-inc\ads-txt-inc.php:152
-#: admin-ui-inc\app-ads-txt-inc.php:68
-#: premium\app-ads-txt-premium\admin-ui-inc\ads-txt-inc.php:84
-#: premium\app-ads-txt-premium\admin-ui-inc\ads-txt-inc.php:152
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc__premium_only.php:84
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc__premium_only.php:152
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc.php:68
-msgid ""
-"An ID that uniquely identifies the advertising system within a certification "
-"authority."
-msgstr ""
-"Un ID que identifica de forma exclusiva el sistema de publicidad dentro de "
-"una autoridad de certificación."
-
-#: admin-ui-inc\ads-txt-inc.php:128 admin-ui-inc\app-ads-txt-inc.php:44
-#: premium\app-ads-txt-premium\admin-ui-inc\ads-txt-inc.php:128
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc__premium_only.php:128
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc.php:44
-msgid ""
-" This must contain the same value used in transactions (i.e. OpenRTB bid "
-"requests) in the field specified by the SSP/exchange (For OpenRTB = "
-"publisher ID | For OpenDirect = publisher’s organization ID)."
-msgstr ""
-" Debe contener el mismo valor utilizado en las transacciones (es decir, "
-"solicitudes de oferta de OpenRTB) en el campo especificado por el SSP / "
-"intercambio (para OpenRTB = ID del editor | Para OpenDirect = ID de la "
-"organización del editor)."
-
-#: admin-ui-inc\ads-txt-inc.php:138 admin-ui-inc\app-ads-txt-inc.php:54
-#: premium\app-ads-txt-premium\admin-ui-inc\ads-txt-inc.php:138
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc.php:54
-msgid ""
-"Your direct demand partners should be listed as “direct.” If your partners "
-"are using third-party resellers to sell your inventory, such providers "
-"should be listed as “reseller.” In any case, you should not add any provider "
-"to your ads-txt.txt file unless you or your partner have a direct "
-"relationship with them."
-msgstr ""
-"Sus socios de demanda directa deben aparecer como \"directos\". Si sus "
-"socios utilizan revendedores externos para vender su inventario, dichos "
-"proveedores deben figurar como \"revendedores\". En cualquier caso, no debe "
-"agregar ningún proveedor a su archivo ads-txt.txt a menos que usted o su "
-"socio tengan una relación directa con ellos."
-
-#: admin-ui-inc\ads-txt-inc.php:176 admin-ui-inc\app-ads-txt-inc.php:90
-#: premium\app-ads-txt-premium\admin-ui-inc\ads-txt-inc.php:176
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc__premium_only.php:176
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc.php:90
-msgid ""
-"(for expert) Copy-paste all rules if you already have them ready to use. "
-"Then save."
-msgstr "(para expertos) Pega todas las reglas si ya las tienes listas. Luego guarda."
-
-#: admin-ui-inc\ads-txt-inc.php:181 admin-ui-inc\app-ads-txt-inc.php:95
-#: premium\app-ads-txt-premium\admin-ui-inc\ads-txt-inc.php:181
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc__premium_only.php:181
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc.php:95
-msgid "Add more custom rules if you need them, otherwise, leave it blank."
-msgstr ""
-"Agregue más reglas personalizadas si las necesita; de lo contrario, déjelo "
-"en blanco."
-
-#: admin-ui-inc\app-ads-txt-inc.php:5
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc__premium_only.php:5
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc.php:5
-#, php-format
-msgid ""
-"Once your settings are applied, please check your app-ads.txt files here. <a "
-"href=\"%s\" target=\"_blank\" class=\"note-btn\">Your app-ads.txt</a>"
-msgstr ""
-"Una vez aplicada la configuración, verifique sus archivos app-ads.txt aquí. "
-"<a href=\"%s\" target=\"_blank\" class=\"note-btn\">Su app-ads.txt</a>"
-
-#: admin-ui-inc\app-ads-txt-inc.php:15
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc__premium_only.php:15
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc.php:15
-msgid "Add rules for App-Ads.txt, one line at a time. Then save"
-msgstr "Agregue reglas para App-Ads.txt, una línea a la vez. Entonces guarda"
-
-#: admin-ui-inc\app-ads-txt-inc.php:19
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc.php:19
-msgid "App-Ads.txt is a premium feature."
-msgstr "App-Ads.txt es una función premium."
-
-#: admin-ui-inc\app-ads-txt-inc.php:19
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc.php:19
-msgid "App-Ads.txt"
-msgstr "App-Ads.txt"
-
-#: app-ads-txt-admin.php:66
-#: premium\app-ads-txt-premium\app-ads-txt-admin.php:82
+#: app-ads-txt-admin.php:128
+#: premium/app-ads-txt-premium/app-ads-txt-admin.php:147
 #, php-format
 msgid "<a href=\"%s\">Get Pro version</a> to enable"
 msgstr "<a href=\"%s\">Obtenga la versión Pro</a> para habilitar"
 
-#: app-ads-txt-admin.php:99
-#: premium\app-ads-txt-premium\app-ads-txt-admin.php:128
+#: app-ads-txt-admin.php:161
+#: premium/app-ads-txt-premium/app-ads-txt-admin.php:193
 msgid "Settings saved."
 msgstr "Ajustes guardados."
 
-#: app-ads-txt-admin.php:110 app-ads-txt-admin.php:120 app-ads-txt.php:109
-#: inc\main-view.php:4 inc\main-view.php:14
-#: premium\app-ads-txt-premium\app-ads-txt-admin.php:141
-#: premium\app-ads-txt-premium\app-ads-txt-admin.php:147
-#: premium\app-ads-txt-premium\app-ads-txt.php:110
-#: premium\app-ads-txt-premium\inc\main-view.php:3
-#: premium\app-ads-txt-premium\inc\main-view.php:9
+#: app-ads-txt-admin.php:172 app-ads-txt-admin.php:182 app-ads-txt.php:109
+#: inc/main-view.php:4 inc/main-view.php:14
+#: premium/app-ads-txt-premium/app-ads-txt-admin.php:206
+#: premium/app-ads-txt-premium/app-ads-txt-admin.php:212
+#: premium/app-ads-txt-premium/app-ads-txt.php:110
+#: premium/app-ads-txt-premium/inc/main-view.php:3
+#: premium/app-ads-txt-premium/inc/main-view.php:9
 msgid "Settings"
 msgstr "Ajustes"
 
-#: app-ads-txt-admin.php:127 inc\main-view.php:21
-#: premium\app-ads-txt-premium\app-ads-txt-admin.php:151
-#: premium\app-ads-txt-premium\inc\main-view.php:13
+#: app-ads-txt-admin.php:189 inc/main-view.php:21
+#: premium/app-ads-txt-premium/app-ads-txt-admin.php:216
+#: premium/app-ads-txt-premium/inc/main-view.php:13
 msgid "FAQ"
 msgstr "FAQ"
 
-#: app-ads-txt-admin.php:134 inc\main-view.php:28
-#: premium\app-ads-txt-premium\app-ads-txt-admin.php:155
-#: premium\app-ads-txt-premium\inc\main-view.php:17
+#: app-ads-txt-admin.php:196 inc/main-view.php:28
+#: premium/app-ads-txt-premium/app-ads-txt-admin.php:220
+#: premium/app-ads-txt-premium/inc/main-view.php:17
 msgid "Recommendations"
 msgstr "Recomendaciones"
 
-#: app-ads-txt-admin.php:161 inc\main-view.php:55
-#: premium\app-ads-txt-premium\app-ads-txt-admin.php:182
-#: premium\app-ads-txt-premium\inc\main-view.php:44
+#: app-ads-txt-admin.php:223 inc/main-view.php:55
+#: premium/app-ads-txt-premium/app-ads-txt-admin.php:247
+#: premium/app-ads-txt-premium/inc/main-view.php:44
 msgid "Ads.txt Settings"
 msgstr "Ajustes de Ads.txt"
 
-#: app-ads-txt-admin.php:162 inc\main-view.php:56
-#: premium\app-ads-txt-premium\app-ads-txt-admin.php:183
-#: premium\app-ads-txt-premium\inc\main-view.php:45
+#: app-ads-txt-admin.php:224 inc/main-view.php:56
+#: premium/app-ads-txt-premium/app-ads-txt-admin.php:248
+#: premium/app-ads-txt-premium/inc/main-view.php:45
 msgid "App-Ads.txt Settings"
 msgstr "Ajustes de App-Ads.txt"
 
-#: app-ads-txt-admin.php:190 inc\main-view.php:84
-#: premium\app-ads-txt-premium\app-ads-txt-admin.php:218
-#: premium\app-ads-txt-premium\inc\main-view.php:80
+#: app-ads-txt-admin.php:252 inc/main-view.php:84
+#: premium/app-ads-txt-premium/app-ads-txt-admin.php:283
+#: premium/app-ads-txt-premium/inc/main-view.php:80
 msgid "Warning: make sure to clear your cache after saving changes."
 msgstr ""
 "Advertencia: asegúrese de borrar su caché después de guardar los cambios."
 
-#: app-ads-txt-admin.php:202 inc\main-view.php:96
-#: premium\app-ads-txt-premium\app-ads-txt-admin.php:228
-#: premium\app-ads-txt-premium\inc\main-view.php:90
+#: app-ads-txt-admin.php:264 inc/main-view.php:96
+#: premium/app-ads-txt-premium/app-ads-txt-admin.php:293
+#: premium/app-ads-txt-premium/inc/main-view.php:90
 msgid "Delete Settings"
 msgstr "Eliminar configuración"
 
-#: app-ads-txt-admin.php:221 inc\main-view.php:115
-#: premium\app-ads-txt-premium\app-ads-txt-admin.php:241
-#: premium\app-ads-txt-premium\inc\main-view.php:103
+#: app-ads-txt-admin.php:283 inc/main-view.php:115
+#: premium/app-ads-txt-premium/app-ads-txt-admin.php:306
+#: premium/app-ads-txt-premium/inc/main-view.php:103
 msgid ""
 "Checking this box will remove ALL settings (app-ads.txt & ads.txt) when you "
 "deactivate plugin."
@@ -311,15 +88,15 @@ msgstr ""
 "Al marcar esta casilla, se eliminarán TODAS las configuraciones (app-ads.txt "
 "y ads.txt) cuando desactive el complemento."
 
-#: app-ads-txt-admin.php:229 inc\main-view.php:123
-#: premium\app-ads-txt-premium\app-ads-txt-admin.php:248
-#: premium\app-ads-txt-premium\inc\main-view.php:110
+#: app-ads-txt-admin.php:291 inc/main-view.php:123
+#: premium/app-ads-txt-premium/app-ads-txt-admin.php:313
+#: premium/app-ads-txt-premium/inc/main-view.php:110
 msgid "Save Changes"
 msgstr "Guardar cambios"
 
-#: app-ads-txt-admin.php:238 inc\main-view.php:132
-#: premium\app-ads-txt-premium\app-ads-txt-admin.php:257
-#: premium\app-ads-txt-premium\inc\main-view.php:119
+#: app-ads-txt-admin.php:302 inc/main-view.php:132
+#: premium/app-ads-txt-premium/app-ads-txt-admin.php:324
+#: premium/app-ads-txt-premium/inc/main-view.php:119
 msgid ""
 "Note: app-ads.txt & ads.txt Manager creates virtual app-ads.txt & ads.txt "
 "files. Please make sure that your permalinks are enabled and there is no "
@@ -333,28 +110,28 @@ msgstr ""
 "utilizando algún tipo de caché, asegúrese de borrarlo después de Guardar "
 "cambios. Lea las preguntas frecuentes para obtener más detalles."
 
-#: app-ads-txt-admin.php:241 inc\main-view.php:135
-#: premium\app-ads-txt-premium\app-ads-txt-admin.php:260
-#: premium\app-ads-txt-premium\inc\main-view.php:122
+#: app-ads-txt-admin.php:305 inc/main-view.php:135
+#: premium/app-ads-txt-premium/app-ads-txt-admin.php:327
+#: premium/app-ads-txt-premium/inc/main-view.php:122
 msgid "If app-ads.txt is still not working. Please try to save Settings >"
 msgstr "Si app-ads.txt aún no funciona. Intente guardar la configuración>"
 
-#: app-ads-txt-admin.php:243 inc\main-view.php:137
-#: premium\app-ads-txt-premium\app-ads-txt-admin.php:261
-#: premium\app-ads-txt-premium\inc\main-view.php:123
+#: app-ads-txt-admin.php:307 inc/main-view.php:137
+#: premium/app-ads-txt-premium/app-ads-txt-admin.php:328
+#: premium/app-ads-txt-premium/inc/main-view.php:123
 msgid "Permalinks"
 msgstr "Enlaces permanentes"
 
-#: app-ads-txt-admin.php:246 inc\main-view.php:140
-#: premium\app-ads-txt-premium\app-ads-txt-admin.php:262
-#: premium\app-ads-txt-premium\inc\main-view.php:124
+#: app-ads-txt-admin.php:310 inc/main-view.php:140
+#: premium/app-ads-txt-premium/app-ads-txt-admin.php:329
+#: premium/app-ads-txt-premium/inc/main-view.php:124
 #, php-format
 msgid "(Check <a href=\"%s\" target=\"_blank\">Screenshot</a>)"
 msgstr "(Ver <a href=\"%s\" target=\"_blank\">captura de pantalla</a>)"
 
-#: app-ads-txt-admin.php:259 inc\main-view.php:153
-#: premium\app-ads-txt-premium\app-ads-txt-admin.php:268
-#: premium\app-ads-txt-premium\inc\main-view.php:130
+#: app-ads-txt-admin.php:323 inc/main-view.php:153
+#: premium/app-ads-txt-premium/app-ads-txt-admin.php:335
+#: premium/app-ads-txt-premium/inc/main-view.php:130
 msgid ""
 "Make sure search engines can crawl your .txt files. Optimize your robots.txt "
 "with"
@@ -362,15 +139,15 @@ msgstr ""
 "Asegúrese de que los motores de búsqueda puedan rastrear sus archivos .txt. "
 "Optimiza tu archivo robots.txt con"
 
-#: app-ads-txt-admin.php:266 inc\main-view.php:160
-#: premium\app-ads-txt-premium\app-ads-txt-admin.php:274
-#: premium\app-ads-txt-premium\inc\main-view.php:136
+#: app-ads-txt-admin.php:330 inc/main-view.php:160
+#: premium/app-ads-txt-premium/app-ads-txt-admin.php:341
+#: premium/app-ads-txt-premium/inc/main-view.php:136
 msgid "Common app-ads.txt snippet:"
 msgstr "Fragmento común de app-ads.txt:"
 
-#: app-ads-txt-admin.php:271 inc\main-view.php:165
-#: premium\app-ads-txt-premium\app-ads-txt-admin.php:278
-#: premium\app-ads-txt-premium\inc\main-view.php:140
+#: app-ads-txt-admin.php:335 inc/main-view.php:165
+#: premium/app-ads-txt-premium/app-ads-txt-admin.php:345
+#: premium/app-ads-txt-premium/inc/main-view.php:140
 msgid ""
 "Just a sample for copy-paste purpose. Make sure to change itaccordingaly "
 "inside custom rules box."
@@ -378,20 +155,412 @@ msgstr ""
 "Solo una muestra para copiar y pegar. Asegúrese de cambiarlo según "
 "corresponda dentro del cuadro de reglas personalizadas."
 
-#: app-ads-txt.php:85 premium\app-ads-txt-premium\app-ads-txt.php:86
+#: app-ads-txt.php:85 premium/app-ads-txt-premium/app-ads-txt.php:86
 #, php-format
 msgid ""
 "Hey %1$s, %2$s Click on Allow & Continue to start optimizing your app-"
 "ads.txt and ads-txt files. %2$s Never miss an important update -- opt-in to "
 "our security and feature updates notifications. %2$s See you on the other "
 "side."
-msgstr "Hola %1$s, %2$s Haz clic en Allow & Continue para empezar a optimizar tus archivos app-ads.txt y ads-txt. %2$s No te pierdas ninguna actualización importante: suscríbete a nuestras notificaciones de seguridad y funciones. %2$s Nos vemos del otro lado."
+msgstr ""
+"Hola %1$s, %2$s Haz clic en Allow & Continue para empezar a optimizar tus "
+"archivos app-ads.txt y ads-txt. %2$s No te pierdas ninguna actualización "
+"importante: suscríbete a nuestras notificaciones de seguridad y funciones. "
+"%2$s Nos vemos del otro lado."
 
-#: inc\faq.php:5 premium\app-ads-txt-premium\inc\faq.php:5
+#: admin-ui-inc/ads-txt-inc.php:5
+#: premium/app-ads-txt-premium/admin-ui-inc/ads-txt-inc.php:5
+#, php-format
+msgid ""
+"Once your settings are applied, please check your ads.txt files here. <a "
+"href=\"%s\" target=\"_blank\" class=\"note-btn\">Your ads.txt</a>"
+msgstr ""
+"Una vez aplicada la configuración, verifique sus archivos ads.txt aquí. <a "
+"href=\"%s\" target=\"_blank\" class=\"note-btn\">Su ads.txt</a>"
+
+#: admin-ui-inc/ads-txt-inc.php:15
+#: premium/app-ads-txt-premium/admin-ui-inc/ads-txt-inc.php:15
+msgid "Add rules for Ads.txt, one line at a time. Then save"
+msgstr "Agregue reglas para Ads.txt, una línea a la vez. Entonces guarda"
+
+#: admin-ui-inc/ads-txt-inc.php:38 admin-ui-inc/ads-txt-inc.php:114
+#: admin-ui-inc/ads-txt-inc.php:121 admin-ui-inc/app-ads-txt-inc.php:30
+#: admin-ui-inc/app-ads-txt-inc.php:37
+#: premium/app-ads-txt-premium/admin-ui-inc/ads-txt-inc.php:38
+#: premium/app-ads-txt-premium/admin-ui-inc/ads-txt-inc.php:114
+#: premium/app-ads-txt-premium/admin-ui-inc/ads-txt-inc.php:121
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc__premium_only.php:38
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc__premium_only.php:114
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc__premium_only.php:121
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc.php:30
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc.php:37
+msgid "Ad Source Domain"
+msgstr "Dominio de la fuente publicitaria"
+
+#: admin-ui-inc/ads-txt-inc.php:42 admin-ui-inc/ads-txt-inc.php:118
+#: admin-ui-inc/app-ads-txt-inc.php:34
+#: premium/app-ads-txt-premium/admin-ui-inc/ads-txt-inc.php:42
+#: premium/app-ads-txt-premium/admin-ui-inc/ads-txt-inc.php:118
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc__premium_only.php:42
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc__premium_only.php:118
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc.php:34
+msgid ""
+"The canonical domain name of the SSP, Exchange, system that bidders connect "
+"to (they publishes a document detailing what domain name to use)."
+msgstr ""
+"El nombre de dominio canónico del SSP, Exchange, sistema al que se conectan "
+"los postores (publican un documento que detalla qué nombre de dominio usar)."
+
+#: admin-ui-inc/ads-txt-inc.php:49
+#: premium/app-ads-txt-premium/admin-ui-inc/ads-txt-inc.php:49
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc__premium_only.php:49
+msgid "Domain of Ads System"
+msgstr "Dominio del sistema de anuncios"
+
+#: admin-ui-inc/ads-txt-inc.php:52 admin-ui-inc/ads-txt-inc.php:63
+#: admin-ui-inc/ads-txt-inc.php:124 admin-ui-inc/ads-txt-inc.php:131
+#: admin-ui-inc/app-ads-txt-inc.php:40 admin-ui-inc/app-ads-txt-inc.php:47
+#: premium/app-ads-txt-premium/admin-ui-inc/ads-txt-inc.php:52
+#: premium/app-ads-txt-premium/admin-ui-inc/ads-txt-inc.php:63
+#: premium/app-ads-txt-premium/admin-ui-inc/ads-txt-inc.php:124
+#: premium/app-ads-txt-premium/admin-ui-inc/ads-txt-inc.php:131
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc__premium_only.php:52
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc__premium_only.php:63
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc__premium_only.php:124
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc__premium_only.php:131
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc.php:40
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc.php:47
+msgid "Publisher ID"
+msgstr "ID del editor"
+
+#: admin-ui-inc/ads-txt-inc.php:56
+#: premium/app-ads-txt-premium/admin-ui-inc/ads-txt-inc.php:56
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc__premium_only.php:56
+msgid ""
+"This must contain the same value used in transactions (i.e. OpenRTB bid "
+"requests) in the field specified by the SSP/exchange (For OpenRTB = "
+"publisher ID | For OpenDirect = publisher's organization ID)."
+msgstr ""
+"Debe contener el mismo valor usado en las transacciones (p. ej., solicitudes "
+"de puja OpenRTB) en el campo especificado por el SSP/exchange (para OpenRTB "
+"= ID del editor | para OpenDirect = ID de la organización del editor)."
+
+#: admin-ui-inc/ads-txt-inc.php:66 admin-ui-inc/ads-txt-inc.php:134
+#: admin-ui-inc/app-ads-txt-inc.php:50
+#: premium/app-ads-txt-premium/admin-ui-inc/ads-txt-inc.php:66
+#: premium/app-ads-txt-premium/admin-ui-inc/ads-txt-inc.php:134
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc__premium_only.php:66
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc__premium_only.php:134
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc.php:50
+msgid "Type of Relationship"
+msgstr "Tipo de relación"
+
+#: admin-ui-inc/ads-txt-inc.php:70
+#: premium/app-ads-txt-premium/admin-ui-inc/ads-txt-inc.php:70
+msgid ""
+"Your direct demand partners should be listed as \"direct.\" If your partners "
+"are using third-party resellers to sell your inventory, such providers "
+"should be listed as \"reseller.\" In any case, you should not add any "
+"provider to your ads-txt.txt file unless you or your partner have a direct "
+"relationship with them."
+msgstr ""
+"Tus socios de demanda directa deben figurar como \"direct\". Si tus socios "
+"usan revendedores externos para vender tu inventario, esos proveedores deben "
+"figurar como \"reseller\". En cualquier caso, no añadas ningún proveedor a "
+"tu archivo ads-txt.txt a menos que tú o tu socio tengáis una relación "
+"directa con él."
+
+#: admin-ui-inc/ads-txt-inc.php:74 admin-ui-inc/ads-txt-inc.php:142
+#: admin-ui-inc/app-ads-txt-inc.php:58
+#: premium/app-ads-txt-premium/admin-ui-inc/ads-txt-inc.php:74
+#: premium/app-ads-txt-premium/admin-ui-inc/ads-txt-inc.php:142
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc__premium_only.php:74
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc__premium_only.php:142
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc.php:58
+msgid "Select Relationship"
+msgstr "Seleccionar relación"
+
+#: admin-ui-inc/ads-txt-inc.php:75 admin-ui-inc/ads-txt-inc.php:143
+#: admin-ui-inc/app-ads-txt-inc.php:59
+#: premium/app-ads-txt-premium/admin-ui-inc/ads-txt-inc.php:75
+#: premium/app-ads-txt-premium/admin-ui-inc/ads-txt-inc.php:143
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc__premium_only.php:75
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc__premium_only.php:143
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc.php:59
+msgid "Direct"
+msgstr "Directo"
+
+#: admin-ui-inc/ads-txt-inc.php:76 admin-ui-inc/ads-txt-inc.php:144
+#: admin-ui-inc/app-ads-txt-inc.php:60
+#: premium/app-ads-txt-premium/admin-ui-inc/ads-txt-inc.php:76
+#: premium/app-ads-txt-premium/admin-ui-inc/ads-txt-inc.php:144
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc__premium_only.php:76
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc__premium_only.php:144
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc.php:60
+msgid "Reseller"
+msgstr "Revendedor"
+
+#: admin-ui-inc/ads-txt-inc.php:80 admin-ui-inc/ads-txt-inc.php:91
+#: admin-ui-inc/ads-txt-inc.php:148 admin-ui-inc/ads-txt-inc.php:155
+#: admin-ui-inc/app-ads-txt-inc.php:64 admin-ui-inc/app-ads-txt-inc.php:71
+#: premium/app-ads-txt-premium/admin-ui-inc/ads-txt-inc.php:80
+#: premium/app-ads-txt-premium/admin-ui-inc/ads-txt-inc.php:91
+#: premium/app-ads-txt-premium/admin-ui-inc/ads-txt-inc.php:148
+#: premium/app-ads-txt-premium/admin-ui-inc/ads-txt-inc.php:155
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc__premium_only.php:80
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc__premium_only.php:91
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc__premium_only.php:148
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc__premium_only.php:155
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc.php:64
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc.php:71
+msgid "Ad Source ID"
+msgstr "ID de la fuente publicitaria"
+
+#: admin-ui-inc/ads-txt-inc.php:84 admin-ui-inc/ads-txt-inc.php:152
+#: admin-ui-inc/app-ads-txt-inc.php:68
+#: premium/app-ads-txt-premium/admin-ui-inc/ads-txt-inc.php:84
+#: premium/app-ads-txt-premium/admin-ui-inc/ads-txt-inc.php:152
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc__premium_only.php:84
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc__premium_only.php:152
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc.php:68
+msgid ""
+"An ID that uniquely identifies the advertising system within a certification "
+"authority."
+msgstr ""
+"Un ID que identifica de forma exclusiva el sistema de publicidad dentro de "
+"una autoridad de certificación."
+
+#: admin-ui-inc/ads-txt-inc.php:128 admin-ui-inc/app-ads-txt-inc.php:44
+#: premium/app-ads-txt-premium/admin-ui-inc/ads-txt-inc.php:128
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc__premium_only.php:128
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc.php:44
+msgid ""
+" This must contain the same value used in transactions (i.e. OpenRTB bid "
+"requests) in the field specified by the SSP/exchange (For OpenRTB = "
+"publisher ID | For OpenDirect = publisher’s organization ID)."
+msgstr ""
+" Debe contener el mismo valor utilizado en las transacciones (es decir, "
+"solicitudes de oferta de OpenRTB) en el campo especificado por el SSP / "
+"intercambio (para OpenRTB = ID del editor | Para OpenDirect = ID de la "
+"organización del editor)."
+
+#: admin-ui-inc/ads-txt-inc.php:138 admin-ui-inc/app-ads-txt-inc.php:54
+#: premium/app-ads-txt-premium/admin-ui-inc/ads-txt-inc.php:138
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc.php:54
+msgid ""
+"Your direct demand partners should be listed as “direct.” If your partners "
+"are using third-party resellers to sell your inventory, such providers "
+"should be listed as “reseller.” In any case, you should not add any provider "
+"to your ads-txt.txt file unless you or your partner have a direct "
+"relationship with them."
+msgstr ""
+"Sus socios de demanda directa deben aparecer como \"directos\". Si sus "
+"socios utilizan revendedores externos para vender su inventario, dichos "
+"proveedores deben figurar como \"revendedores\". En cualquier caso, no debe "
+"agregar ningún proveedor a su archivo ads-txt.txt a menos que usted o su "
+"socio tengan una relación directa con ellos."
+
+#: admin-ui-inc/ads-txt-inc.php:176 admin-ui-inc/app-ads-txt-inc.php:90
+#: premium/app-ads-txt-premium/admin-ui-inc/ads-txt-inc.php:176
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc__premium_only.php:176
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc.php:90
+msgid ""
+"(for expert) Copy-paste all rules if you already have them ready to use. "
+"Then save."
+msgstr ""
+"(para expertos) Pega todas las reglas si ya las tienes listas. Luego guarda."
+
+#: admin-ui-inc/ads-txt-inc.php:181 admin-ui-inc/app-ads-txt-inc.php:95
+#: premium/app-ads-txt-premium/admin-ui-inc/ads-txt-inc.php:181
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc__premium_only.php:181
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc.php:95
+msgid "Add more custom rules if you need them, otherwise, leave it blank."
+msgstr ""
+"Agregue más reglas personalizadas si las necesita; de lo contrario, déjelo "
+"en blanco."
+
+#: admin-ui-inc/app-ads-txt-inc.php:5
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc__premium_only.php:5
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc.php:5
+#, php-format
+msgid ""
+"Once your settings are applied, please check your app-ads.txt files here. <a "
+"href=\"%s\" target=\"_blank\" class=\"note-btn\">Your app-ads.txt</a>"
+msgstr ""
+"Una vez aplicada la configuración, verifique sus archivos app-ads.txt aquí. "
+"<a href=\"%s\" target=\"_blank\" class=\"note-btn\">Su app-ads.txt</a>"
+
+#: admin-ui-inc/app-ads-txt-inc.php:15
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc__premium_only.php:15
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc.php:15
+msgid "Add rules for App-Ads.txt, one line at a time. Then save"
+msgstr "Agregue reglas para App-Ads.txt, una línea a la vez. Entonces guarda"
+
+#: admin-ui-inc/app-ads-txt-inc.php:19
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc.php:19
+msgid "App-Ads.txt is a premium feature."
+msgstr "App-Ads.txt es una función premium."
+
+#: admin-ui-inc/app-ads-txt-inc.php:19
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc.php:19
+msgid "App-Ads.txt"
+msgstr "App-Ads.txt"
+
+#: admin-ui-inc/evidence-panel.php:21
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:21
+msgid "File status"
+msgstr "Estado de los archivos"
+
+#: admin-ui-inc/evidence-panel.php:24
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:24
+msgid "Last scan:"
+msgstr "Último análisis:"
+
+#: admin-ui-inc/evidence-panel.php:29 admin-ui-inc/evidence-panel.php:107
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:29
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:107
+msgid "Not scanned yet."
+msgstr "Aún no analizado."
+
+#: admin-ui-inc/evidence-panel.php:42
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:42
+msgid "Run validation"
+msgstr "Ejecutar validación"
+
+#: admin-ui-inc/evidence-panel.php:48
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:48
+msgid "Export JSON"
+msgstr "Exportar JSON"
+
+#: admin-ui-inc/evidence-panel.php:55
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:55
+msgid "File"
+msgstr "Archivo"
+
+#: admin-ui-inc/evidence-panel.php:56
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:56
+msgid "Line"
+msgstr "Línea"
+
+#: admin-ui-inc/evidence-panel.php:57
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:57
+msgid "Severity"
+msgstr "Gravedad"
+
+#: admin-ui-inc/evidence-panel.php:58
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:58
+msgid "Issue"
+msgstr "Incidencia"
+
+#: admin-ui-inc/evidence-panel.php:59
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:59
+msgid "Evidence"
+msgstr "Evidencia"
+
+#: admin-ui-inc/evidence-panel.php:60
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:60
+msgid "Suggested fix"
+msgstr "Corrección sugerida"
+
+#: admin-ui-inc/evidence-panel.php:111
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:111
+msgid "No blocking issue found."
+msgstr "No se encontró ningún problema bloqueante."
+
+#. translators: 1: error count, 2: warning count.
+#: admin-ui-inc/evidence-panel.php:116
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:116
+#, php-format
+msgid "%1$d errors, %2$d warnings"
+msgstr "%1$d errores, %2$d advertencias"
+
+#: admin-ui-inc/evidence-panel.php:154 admin-ui-inc/evidence-panel.php:155
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:154
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:155
+msgid "Invalid line format"
+msgstr "Formato de línea no válido"
+
+#: admin-ui-inc/evidence-panel.php:156 admin-ui-inc/evidence-panel.php:157
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:156
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:157
+msgid "Invalid relationship field"
+msgstr "Campo de relación no válido"
+
+#: admin-ui-inc/evidence-panel.php:158 admin-ui-inc/evidence-panel.php:159
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:158
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:159
+msgid "Duplicate record"
+msgstr "Registro duplicado"
+
+#: admin-ui-inc/evidence-panel.php:160 admin-ui-inc/evidence-panel.php:161
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:160
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:161
+msgid "No seller record found"
+msgstr "No se encontró ningún registro de vendedor"
+
+#: admin-ui-inc/evidence-panel.php:162
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:162
+msgid "Unknown variable"
+msgstr "Variable desconocida"
+
+#: admin-ui-inc/evidence-panel.php:163
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:163
+msgid "OWNERDOMAIN is not set"
+msgstr "OWNERDOMAIN no está definido"
+
+#: admin-ui-inc/evidence-panel.php:164
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:164
+msgid "MANAGERDOMAIN is not set"
+msgstr "MANAGERDOMAIN no está definido"
+
+#: admin-ui-inc/evidence-panel.php:165 admin-ui-inc/evidence-panel.php:166
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:165
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:166
+msgid "Physical file conflict"
+msgstr "Conflicto con archivo físico"
+
+#: admin-ui-inc/evidence-panel.php:167 admin-ui-inc/evidence-panel.php:168
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:167
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:168
+msgid "Cross-host redirect"
+msgstr "Redirección a otro host"
+
+#: admin-ui-inc/evidence-panel.php:169 admin-ui-inc/evidence-panel.php:170
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:169
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:170
+msgid "No blocking issue found"
+msgstr "No se encontró ningún problema bloqueante"
+
+#: admin-ui-inc/evidence-panel.php:178
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:178
+msgid "Critical"
+msgstr "Crítica"
+
+#: admin-ui-inc/evidence-panel.php:179
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:179
+msgid "High"
+msgstr "Alta"
+
+#: admin-ui-inc/evidence-panel.php:180
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:180
+msgid "Medium"
+msgstr "Media"
+
+#: admin-ui-inc/evidence-panel.php:181
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:181
+msgid "Low"
+msgstr "Baja"
+
+#: admin-ui-inc/evidence-panel.php:182
+#: premium/app-ads-txt-premium/admin-ui-inc/evidence-panel.php:182
+msgid "Info"
+msgstr "Info"
+
+#: inc/faq.php:5 premium/app-ads-txt-premium/inc/faq.php:5
 msgid "What’s app-ads.txt?"
 msgstr "¿Qué es app-ads.txt?"
 
-#: inc\faq.php:9 premium\app-ads-txt-premium\inc\faq.php:9
+#: inc/faq.php:9 premium/app-ads-txt-premium/inc/faq.php:9
 msgid ""
 "In June 2017, the IAB (The Interactive Advertising Bureau Tech Lab) launched "
 "ads.txt, a file enabling web publishers to designate authorized digital "
@@ -410,7 +579,7 @@ msgstr ""
 "ads.txt es el equivalente en aplicación móvil de esta especificación, que "
 "los editores móviles pueden implementar."
 
-#: inc\faq.php:13 premium\app-ads-txt-premium\inc\faq.php:13
+#: inc/faq.php:13 premium/app-ads-txt-premium/inc/faq.php:13
 msgid ""
 "The app-ads.txt file is the version of ads.txt for mobile in-app and OTT "
 "advertising, to combat bad actors that disguise themselves as another "
@@ -425,7 +594,7 @@ msgstr ""
 "App-ads.txt tienen el mismo formato que los archivos ads.txt (consulte las "
 "preguntas frecuentes de IAB para ads.txt y app-ads.txt)."
 
-#: inc\faq.php:17 premium\app-ads-txt-premium\inc\faq.php:17
+#: inc/faq.php:17 premium/app-ads-txt-premium/inc/faq.php:17
 msgid ""
 "Thanks to app-ads.txt file, Mobile and OTT app publishers can list the ad "
 "tech vendors that are authorized to sell or resell their ad inventory, and "
@@ -440,15 +609,15 @@ msgstr ""
 "que una empresa que dice ofrecer una aplicación el inventario es capaz de "
 "vender el inventario de la aplicación."
 
-#: inc\faq.php:21 premium\app-ads-txt-premium\inc\faq.php:21
+#: inc/faq.php:21 premium/app-ads-txt-premium/inc/faq.php:21
 msgid "This file opens the door for a new level of transparency."
 msgstr "Este archivo abre la puerta a un nuevo nivel de transparencia."
 
-#: inc\faq.php:29 premium\app-ads-txt-premium\inc\faq.php:29
+#: inc/faq.php:29 premium/app-ads-txt-premium/inc/faq.php:29
 msgid "What’s ads.txt ?"
 msgstr "¿Qué es ads.txt?"
 
-#: inc\faq.php:33 premium\app-ads-txt-premium\inc\faq.php:33
+#: inc/faq.php:33 premium/app-ads-txt-premium/inc/faq.php:33
 msgid ""
 "It is an IAB-approved text file that aims to prevent unauthorized inventory "
 "sales. In a fragmented advertising ecosystem, ads.txt serves as a method of "
@@ -461,7 +630,7 @@ msgstr ""
 "plataformas del lado de la demanda. De hecho, los DSP no compran suministros "
 "web que no estén autorizados a través de ads.txt."
 
-#: inc\faq.php:37 premium\app-ads-txt-premium\inc\faq.php:37
+#: inc/faq.php:37 premium/app-ads-txt-premium/inc/faq.php:37
 msgid ""
 "Concretely, publishers drop a text file on their web servers that lists all "
 "of the companies that are authorized to sell the publishers’ inventory. "
@@ -476,30 +645,30 @@ msgstr ""
 "editores están autorizados a vender. Esto permite a los compradores "
 "verificar la validez del inventario que compran."
 
-#: inc\faq.php:41 premium\app-ads-txt-premium\inc\faq.php:41
+#: inc/faq.php:41 premium/app-ads-txt-premium/inc/faq.php:41
 msgid "More details here : https://youtu.be/T_4uK2HnOy0"
 msgstr "Más detalles aquí: https://youtu.be/T_4uK2HnOy0"
 
-#: inc\faq.php:49 premium\app-ads-txt-premium\inc\faq.php:49
+#: inc/faq.php:49 premium/app-ads-txt-premium/inc/faq.php:49
 msgid "My .txt file doesn’t show up at all."
 msgstr "Mi archivo .txt no aparece en absoluto."
 
-#: inc\faq.php:53 premium\app-ads-txt-premium\inc\faq.php:53
+#: inc/faq.php:53 premium/app-ads-txt-premium/inc/faq.php:53
 msgid ""
 "Please clear your browser cache and reload the ads.txt OR app-ads.txt link."
 msgstr ""
 "Limpie la memoria caché de su navegador y vuelva a cargar el enlace ads.txt "
 "O app-ads.txt."
 
-#: inc\faq.php:60 premium\app-ads-txt-premium\inc\faq.php:60
+#: inc/faq.php:60 premium/app-ads-txt-premium/inc/faq.php:60
 msgid "How app-ads.txt can benefit your mobile app?"
 msgstr "¿Cómo app-ads.txt puede beneficiar a su aplicación móvil?"
 
-#: inc\faq.php:64 premium\app-ads-txt-premium\inc\faq.php:64
+#: inc/faq.php:64 premium/app-ads-txt-premium/inc/faq.php:64
 msgid "There are two main benefits for app developers."
 msgstr "Hay dos ventajas principales para los desarrolladores de aplicaciones."
 
-#: inc\faq.php:67 premium\app-ads-txt-premium\inc\faq.php:67
+#: inc/faq.php:67 premium/app-ads-txt-premium/inc/faq.php:67
 msgid ""
 "Capturing revenue from brand spend. Brands today represent a growing and "
 "potentially significant revenue opportunity for developers. We can expect "
@@ -516,7 +685,7 @@ msgstr ""
 "desarrolladores que no implementen app-ads.txt se eliminen del grupo de "
 "medios de orientación de los DSP."
 
-#: inc\faq.php:71 premium\app-ads-txt-premium\inc\faq.php:71
+#: inc/faq.php:71 premium/app-ads-txt-premium/inc/faq.php:71
 msgid ""
 "Fighting ad fraud. Bad actors may forge apps that impersonate legitimate "
 "apps, and mislead DSPs to spend brand budgets on their forged inventory. "
@@ -534,18 +703,18 @@ msgstr ""
 "fraude que, en última instancia, perjudican los resultados de los "
 "desarrolladores."
 
-#: inc\faq.php:75 premium\app-ads-txt-premium\inc\faq.php:75
+#: inc/faq.php:75 premium/app-ads-txt-premium/inc/faq.php:75
 msgid "Source : https://www.ironsrc.com/blog/what-is-app-ads-txt/"
 msgstr "Fuente: https://www.ironsrc.com/blog/what-is-app-ads-txt/"
 
-#: inc\faq.php:84 premium\app-ads-txt-premium\inc\faq.php:84
+#: inc/faq.php:84 premium/app-ads-txt-premium/inc/faq.php:84
 msgid ""
 "How does app-ads.txt help mobile app developers capture more ad revenue?"
 msgstr ""
 "¿Cómo ayuda app-ads.txt a los desarrolladores de aplicaciones móviles a "
 "obtener más ingresos publicitarios?"
 
-#: inc\faq.php:88 premium\app-ads-txt-premium\inc\faq.php:88
+#: inc/faq.php:88 premium/app-ads-txt-premium/inc/faq.php:88
 msgid ""
 "Authorized in-app inventory. An ever-increasing amount of brands are looking "
 "to advertise in-app today. Brand buyers now rely on an adherence to app-"
@@ -564,7 +733,7 @@ msgstr ""
 "cualquier comprador de marca. Es por eso que unirse al movimiento app-"
 "ads.txt es crucial para que los editores mantengan sus ingresos."
 
-#: inc\faq.php:92 premium\app-ads-txt-premium\inc\faq.php:92
+#: inc/faq.php:92 premium/app-ads-txt-premium/inc/faq.php:92
 msgid ""
 "Ad fraud prevention. App-ads.txt blocks unauthorized developers who "
 "impersonate legitimate apps and mislead DSPs into spending brand budgets on "
@@ -578,7 +747,7 @@ msgstr ""
 "auténticos pueden retener una mayor parte de los ingresos publicitarios del "
 "inventario realmente orientado a su aplicación."
 
-#: inc\faq.php:96 premium\app-ads-txt-premium\inc\faq.php:96
+#: inc/faq.php:96 premium/app-ads-txt-premium/inc/faq.php:96
 msgid ""
 "Source : https://support.vungle.com/hc/en-us/articles/360029177591-App-ads-"
 "text-Overview"
@@ -586,7 +755,7 @@ msgstr ""
 "Fuente: https://support.vungle.com/hc/en-us/articles/360029177591-App-ads-"
 "text-Overview"
 
-#: inc\notices.php:13 premium\app-ads-txt-premium\inc\notices.php:13
+#: inc/notices.php:13 premium/app-ads-txt-premium/inc/notices.php:13
 #, php-format
 msgid ""
 "Show support for App-ads.txt & Ads.txt Manager with a 5-star rating » <a "
@@ -595,14 +764,14 @@ msgstr ""
 "Mostrar soporte para App-ads.txt &amp; Ads.txt Manager con una calificación "
 "de 5 estrellas » <a href=\"%s\" target=\"_blank\">Haga clic aquí</a>"
 
-#: inc\recommendations.php:5
-#: premium\app-ads-txt-premium\inc\recommendations.php:4
+#: inc/recommendations.php:5
+#: premium/app-ads-txt-premium/inc/recommendations.php:4
 msgid "Schema App Structured Data by Hunch Manifest"
 msgstr ""
 "Datos estructurados de la aplicación de esquema por manifiesto de corazonada"
 
-#: inc\recommendations.php:6
-#: premium\app-ads-txt-premium\inc\recommendations.php:5
+#: inc/recommendations.php:6
+#: premium/app-ads-txt-premium/inc/recommendations.php:5
 msgid ""
 "Get Schema.org structured data for all pages, posts, categories and profile "
 "pages on activation."
@@ -610,13 +779,13 @@ msgstr ""
 "Obtenga datos estructurados de Schema.org para todas las páginas, "
 "publicaciones, categorías y páginas de perfil en la activación."
 
-#: inc\recommendations.php:11
-#: premium\app-ads-txt-premium\inc\recommendations.php:10
+#: inc/recommendations.php:11
+#: premium/app-ads-txt-premium/inc/recommendations.php:10
 msgid "Yasr – Yet Another Stars Rating by Dario Curvino"
 msgstr "Yasr: otra calificación de estrellas por Dario Curvino"
 
-#: inc\recommendations.php:12
-#: premium\app-ads-txt-premium\inc\recommendations.php:11
+#: inc/recommendations.php:12
+#: premium/app-ads-txt-premium/inc/recommendations.php:11
 msgid ""
 "Boost the way people interact with your website, e-commerce or blog with an "
 "easy and intuitive WordPress rating system!"
@@ -625,13 +794,13 @@ msgstr ""
 "electrónico o blog con un sistema de clasificación de WordPress fácil e "
 "intuitivo!"
 
-#: inc\recommendations.php:17
-#: premium\app-ads-txt-premium\inc\recommendations.php:16
+#: inc/recommendations.php:17
+#: premium/app-ads-txt-premium/inc/recommendations.php:16
 msgid "Akismet Anti-Spam by Automattic"
 msgstr "Akismet Anti-Spam de Automattic"
 
-#: inc\recommendations.php:18
-#: premium\app-ads-txt-premium\inc\recommendations.php:17
+#: inc/recommendations.php:18
+#: premium/app-ads-txt-premium/inc/recommendations.php:17
 msgid ""
 "Akismet checks your comments and contact form submissions against our global "
 "database of spam to protect you and your site from malicious content."
@@ -640,13 +809,13 @@ msgstr ""
 "nuestra base de datos global de spam para protegerlo a usted y a su sitio de "
 "contenido malicioso."
 
-#: inc\recommendations.php:23
-#: premium\app-ads-txt-premium\inc\recommendations.php:22
+#: inc/recommendations.php:23
+#: premium/app-ads-txt-premium/inc/recommendations.php:22
 msgid "Smush Image Compression and Optimization By WPMU DEV"
 msgstr "Compresión y optimización de imágenes Smush por WPMU DEV"
 
-#: inc\recommendations.php:24
-#: premium\app-ads-txt-premium\inc\recommendations.php:23
+#: inc/recommendations.php:24
+#: premium/app-ads-txt-premium/inc/recommendations.php:23
 msgid ""
 "Compress and optimize (or optimise) image files, improve performance and "
 "boost your SEO rank using Smush WordPress image compression and optimization."
@@ -655,13 +824,13 @@ msgstr ""
 "aumente su rango de SEO utilizando la compresión y optimización de imágenes "
 "de Smush WordPress."
 
-#: inc\recommendations.php:29
-#: premium\app-ads-txt-premium\inc\recommendations.php:28
+#: inc/recommendations.php:29
+#: premium/app-ads-txt-premium/inc/recommendations.php:28
 msgid "404 to 301 By Joel James"
 msgstr "404 a 301 por Joel James"
 
-#: inc\recommendations.php:30
-#: premium\app-ads-txt-premium\inc\recommendations.php:29
+#: inc/recommendations.php:30
+#: premium/app-ads-txt-premium/inc/recommendations.php:29
 msgid ""
 "Automatically redirect, log and notify all 404 page errors to any page using "
 "301 redirection."
@@ -669,13 +838,13 @@ msgstr ""
 "Redirija, registre y notifique automáticamente todos los errores de página "
 "404 a cualquier página utilizando la redirección 301."
 
-#: inc\recommendations.php:35
-#: premium\app-ads-txt-premium\inc\recommendations.php:34
+#: inc/recommendations.php:35
+#: premium/app-ads-txt-premium/inc/recommendations.php:34
 msgid "Yoast SEO By Team Yoast"
 msgstr "Yoast SEO por el equipo Yoast"
 
-#: inc\recommendations.php:36
-#: premium\app-ads-txt-premium\inc\recommendations.php:35
+#: inc/recommendations.php:36
+#: premium/app-ads-txt-premium/inc/recommendations.php:35
 msgid ""
 "Improve your WordPress SEO: Write better content and have a fully optimized "
 "WordPress site using the Yoast SEO plugin."
@@ -683,13 +852,13 @@ msgstr ""
 "Mejore su SEO de WordPress: escriba mejor contenido y tenga un sitio de "
 "WordPress totalmente optimizado utilizando el complemento Yoast SEO."
 
-#: inc\recommendations.php:44
-#: premium\app-ads-txt-premium\inc\recommendations.php:43
+#: inc/recommendations.php:44
+#: premium/app-ads-txt-premium/inc/recommendations.php:43
 msgid "Top plugins for SEO performance:"
 msgstr "Principales complementos para el rendimiento de SEO:"
 
-#: inc\recommendations.php:52
-#: premium\app-ads-txt-premium\inc\recommendations.php:49
+#: inc/recommendations.php:52
+#: premium/app-ads-txt-premium/inc/recommendations.php:49
 msgid ""
 "App-Ads.txt & Ads.txt Manager by Pagup provides a selection of plugins "
 "allowing to keep your website healthy, get better results on Search engines "
@@ -700,14 +869,14 @@ msgstr ""
 "mejores resultados en los motores de búsqueda y aumentar sus ventas de "
 "soluciones de comercio electrónico."
 
-#: inc\recommendations.php:94
-#: premium\app-ads-txt-premium\inc\recommendations.php:69
-#: premium\app-ads-txt-premium\inc\recommendations.php:175
+#: inc/recommendations.php:94
+#: premium/app-ads-txt-premium/inc/recommendations.php:69
+#: premium/app-ads-txt-premium/inc/recommendations.php:175
 msgid "Download"
 msgstr "Descargar"
 
-#: inc\recommendations.php:112
-#: premium\app-ads-txt-premium\inc\recommendations.php:186
+#: inc/recommendations.php:112
+#: premium/app-ads-txt-premium/inc/recommendations.php:186
 #, php-format
 msgid ""
 "Upgrade to <a href=\"%s\">PRO version</a> to UNLOCK 12 additional awesome "
@@ -717,8 +886,8 @@ msgstr ""
 "recomendaciones adicionales de complementos para el rendimiento de SEO y "
 "conversión"
 
-#: inc\recommendations.php:126
-#: premium\app-ads-txt-premium\inc\recommendations.php:192
+#: inc/recommendations.php:126
+#: premium/app-ads-txt-premium/inc/recommendations.php:192
 msgid ""
 "Want to suggest another plugin ? ... Send us a message at support@better-"
 "robots.com"
@@ -726,23 +895,23 @@ msgstr ""
 "¿Quieres sugerir otro complemento? ... Envíenos un mensaje a support@better-"
 "robots.com"
 
-#: inc\seo-recommendations.php:2
-#: premium\app-ads-txt-premium\inc\seo-recommendations.php:1
+#: inc/seo-recommendations.php:2
+#: premium/app-ads-txt-premium/inc/seo-recommendations.php:1
 msgid "SEO tools recommended by App-Ads.txt & Ads.txt Manager:"
 msgstr "Herramientas de SEO recomendadas por App-Ads.txt & Ads.txt Manager:"
 
-#: inc\seo-recommendations.php:10
-#: premium\app-ads-txt-premium\inc\seo-recommendations.php:5
+#: inc/seo-recommendations.php:10
+#: premium/app-ads-txt-premium/inc/seo-recommendations.php:5
 msgid "Premium Feature"
 msgstr "Característica Premium"
 
-#: inc\seo-recommendations.php:21
-#: premium\app-ads-txt-premium\inc\seo-recommendations.php:12
+#: inc/seo-recommendations.php:21
+#: premium/app-ads-txt-premium/inc/seo-recommendations.php:12
 msgid "Loading performance"
 msgstr "Rendimiento de carga"
 
-#: inc\seo-recommendations.php:24
-#: premium\app-ads-txt-premium\inc\seo-recommendations.php:13
+#: inc/seo-recommendations.php:24
+#: premium/app-ads-txt-premium/inc/seo-recommendations.php:13
 msgid ""
 "Get insight on how well your site loads with actionable recommendations on "
 "how to optimize it."
@@ -750,19 +919,19 @@ msgstr ""
 "Obtenga información sobre qué tan bien se carga su sitio con recomendaciones "
 "prácticas sobre cómo optimizarlo."
 
-#: inc\seo-recommendations.php:31
-#: premium\app-ads-txt-premium\inc\seo-recommendations.php:16
-#: premium\app-ads-txt-premium\inc\seo-recommendations.php:18
+#: inc/seo-recommendations.php:31
+#: premium/app-ads-txt-premium/inc/seo-recommendations.php:16
+#: premium/app-ads-txt-premium/inc/seo-recommendations.php:18
 msgid "Analyse my site"
 msgstr "Analizar mi sitio"
 
-#: inc\seo-recommendations.php:43
-#: premium\app-ads-txt-premium\inc\seo-recommendations.php:26
+#: inc/seo-recommendations.php:43
+#: premium/app-ads-txt-premium/inc/seo-recommendations.php:26
 msgid "Google Ranking"
 msgstr "Clasificación de Google"
 
-#: inc\seo-recommendations.php:46
-#: premium\app-ads-txt-premium\inc\seo-recommendations.php:27
+#: inc/seo-recommendations.php:46
+#: premium/app-ads-txt-premium/inc/seo-recommendations.php:27
 msgid ""
 "Analyse your Google ranking with keywords, traffic and more (REGISTER TO GET "
 "10 FREE REQUESTS)"
@@ -770,19 +939,19 @@ msgstr ""
 "Analice su ranking de Google con palabras clave, tráfico y más (REGÍSTRESE "
 "PARA OBTENER 10 SOLICITUDES GRATUITAS)"
 
-#: inc\seo-recommendations.php:53
-#: premium\app-ads-txt-premium\inc\seo-recommendations.php:30
-#: premium\app-ads-txt-premium\inc\seo-recommendations.php:32
+#: inc/seo-recommendations.php:53
+#: premium/app-ads-txt-premium/inc/seo-recommendations.php:30
+#: premium/app-ads-txt-premium/inc/seo-recommendations.php:32
 msgid "My Google Ranking"
 msgstr "Mi clasificación de Google"
 
-#: inc\seo-recommendations.php:69
-#: premium\app-ads-txt-premium\inc\seo-recommendations.php:44
+#: inc/seo-recommendations.php:69
+#: premium/app-ads-txt-premium/inc/seo-recommendations.php:44
 msgid "Dead links"
 msgstr "Enlaces muertos"
 
-#: inc\seo-recommendations.php:72
-#: premium\app-ads-txt-premium\inc\seo-recommendations.php:45
+#: inc/seo-recommendations.php:72
+#: premium/app-ads-txt-premium/inc/seo-recommendations.php:45
 msgid ""
 "Dead links, 404 errors, 503 errors, ... all bad links that could hurt your "
 "website ranking."
@@ -790,38 +959,38 @@ msgstr ""
 "Enlaces muertos, errores 404, errores 503, ... todos los enlaces malos que "
 "podrían dañar el ranking de su sitio web."
 
-#: inc\seo-recommendations.php:79
-#: premium\app-ads-txt-premium\inc\seo-recommendations.php:48
-#: premium\app-ads-txt-premium\inc\seo-recommendations.php:50
+#: inc/seo-recommendations.php:79
+#: premium/app-ads-txt-premium/inc/seo-recommendations.php:48
+#: premium/app-ads-txt-premium/inc/seo-recommendations.php:50
 msgid "Check my links"
 msgstr "Revisa mis enlaces"
 
-#: inc\seo-recommendations.php:91
-#: premium\app-ads-txt-premium\inc\seo-recommendations.php:58
+#: inc/seo-recommendations.php:91
+#: premium/app-ads-txt-premium/inc/seo-recommendations.php:58
 msgid "SEO Score"
 msgstr "Puntaje SEO"
 
-#: inc\seo-recommendations.php:94
-#: premium\app-ads-txt-premium\inc\seo-recommendations.php:59
+#: inc/seo-recommendations.php:94
+#: premium/app-ads-txt-premium/inc/seo-recommendations.php:59
 msgid ""
 "Get a simple and professional-quality SEO audit of your website for FREE"
 msgstr ""
 "Obtenga una auditoría SEO simple y de calidad profesional de su sitio web "
 "GRATIS"
 
-#: inc\seo-recommendations.php:101
-#: premium\app-ads-txt-premium\inc\seo-recommendations.php:62
-#: premium\app-ads-txt-premium\inc\seo-recommendations.php:64
+#: inc/seo-recommendations.php:101
+#: premium/app-ads-txt-premium/inc/seo-recommendations.php:62
+#: premium/app-ads-txt-premium/inc/seo-recommendations.php:64
 msgid "My SEO profile"
 msgstr "Mi perfil SEO"
 
-#: inc\seo-recommendations.php:125
-#: premium\app-ads-txt-premium\inc\seo-recommendations.php:80
+#: inc/seo-recommendations.php:125
+#: premium/app-ads-txt-premium/inc/seo-recommendations.php:80
 msgid "Index Your Website (Google)"
 msgstr "Indexar su sitio web (Google)"
 
-#: inc\seo-recommendations.php:128
-#: premium\app-ads-txt-premium\inc\seo-recommendations.php:81
+#: inc/seo-recommendations.php:128
+#: premium/app-ads-txt-premium/inc/seo-recommendations.php:81
 msgid ""
 "Submit your website to Google Search Console and enjoy the real benefit of "
 "Better Robots.txt"
@@ -829,18 +998,18 @@ msgstr ""
 "Envíe su sitio web a Google Search Console y disfrute del beneficio real de "
 "Better Robots.txt"
 
-#: inc\seo-recommendations.php:131
-#: premium\app-ads-txt-premium\inc\seo-recommendations.php:82
+#: inc/seo-recommendations.php:131
+#: premium/app-ads-txt-premium/inc/seo-recommendations.php:82
 msgid "Google Search Console"
 msgstr "Consola de búsqueda de Google"
 
-#: inc\seo-recommendations.php:139
-#: premium\app-ads-txt-premium\inc\seo-recommendations.php:88
+#: inc/seo-recommendations.php:139
+#: premium/app-ads-txt-premium/inc/seo-recommendations.php:88
 msgid "Index your Website (Bing)"
 msgstr "Indexe su sitio web (Bing)"
 
-#: inc\seo-recommendations.php:142
-#: premium\app-ads-txt-premium\inc\seo-recommendations.php:89
+#: inc/seo-recommendations.php:142
+#: premium/app-ads-txt-premium/inc/seo-recommendations.php:89
 msgid ""
 "Submit your website to Bing Webmaster tool and enjoy the real benefit of "
 "Better Robots.txt"
@@ -848,18 +1017,18 @@ msgstr ""
 "Envíe su sitio web a la herramienta Bing Webmaster y disfrute del beneficio "
 "real de Better Robots.txt"
 
-#: inc\seo-recommendations.php:145
-#: premium\app-ads-txt-premium\inc\seo-recommendations.php:90
+#: inc/seo-recommendations.php:145
+#: premium/app-ads-txt-premium/inc/seo-recommendations.php:90
 msgid "Bing Webmaster tool"
 msgstr "Herramienta para webmasters de Bing"
 
-#: inc\seo-recommendations.php:157
-#: premium\app-ads-txt-premium\inc\seo-recommendations.php:100
+#: inc/seo-recommendations.php:157
+#: premium/app-ads-txt-premium/inc/seo-recommendations.php:100
 msgid "MASS PING"
 msgstr "PING MASIVO"
 
-#: inc\seo-recommendations.php:160
-#: premium\app-ads-txt-premium\inc\seo-recommendations.php:101
+#: inc/seo-recommendations.php:160
+#: premium/app-ads-txt-premium/inc/seo-recommendations.php:101
 msgid ""
 "Mass ping is a free online tool that easily promotes your blog or website on "
 "70 different search engines."
@@ -867,32 +1036,37 @@ msgstr ""
 "Mass ping es una herramienta en línea gratuita que promueve fácilmente su "
 "blog o sitio web en 70 motores de búsqueda diferentes."
 
-#: inc\seo-recommendations.php:163
-#: premium\app-ads-txt-premium\inc\seo-recommendations.php:102
+#: inc/seo-recommendations.php:163
+#: premium/app-ads-txt-premium/inc/seo-recommendations.php:102
 msgid "Ping my links"
 msgstr "Hacer ping a mis enlaces"
 
-#: inc\sidebar.php:6 premium\app-ads-txt-premium\inc\sidebar.php:6
+#: inc/sidebar.php:6 premium/app-ads-txt-premium/inc/sidebar.php:6
 msgid "Boost your SEO with Meta Tags"
 msgstr "Mejora tu SEO con metaetiquetas"
 
-#: inc\sidebar.php:7 premium\app-ads-txt-premium\inc\sidebar.php:7
+#: inc/sidebar.php:7 premium/app-ads-txt-premium/inc/sidebar.php:7
 msgid ""
 "Auto-populate custom SEO META Keywords everywhere on your website based on "
 "Post titles, Yoast/Rank Math Focus keywords, and more. Add custom META tags "
 "to help Search engines such as Google to understand additional information "
 "about the webpage (for ranking purposes)."
-msgstr "Rellena automáticamente las palabras clave META SEO personalizadas en todo tu sitio web basándote en los títulos de entradas, las palabras clave principales de Yoast/Rank Math y más. Añade metaetiquetas personalizadas para ayudar a motores de búsqueda como Google a comprender información adicional sobre la página web (con fines de posicionamiento)."
+msgstr ""
+"Rellena automáticamente las palabras clave META SEO personalizadas en todo "
+"tu sitio web basándote en los títulos de entradas, las palabras clave "
+"principales de Yoast/Rank Math y más. Añade metaetiquetas personalizadas "
+"para ayudar a motores de búsqueda como Google a comprender información "
+"adicional sobre la página web (con fines de posicionamiento)."
 
-#: inc\sidebar.php:8 premium\app-ads-txt-premium\inc\sidebar.php:8
+#: inc/sidebar.php:8 premium/app-ads-txt-premium/inc/sidebar.php:8
 msgid "Read More &raquo;"
 msgstr "Leer más &raquo;"
 
-#: inc\sidebar.php:12 premium\app-ads-txt-premium\inc\sidebar.php:12
+#: inc/sidebar.php:12 premium/app-ads-txt-premium/inc/sidebar.php:12
 msgid "Boost your ranking on Google"
 msgstr "Mejora tu clasificación en Google"
 
-#: inc\sidebar.php:13 premium\app-ads-txt-premium\inc\sidebar.php:13
+#: inc/sidebar.php:13 premium/app-ads-txt-premium/inc/sidebar.php:13
 msgid ""
 "Optimize your Robots.txt with Better Robots.txt (made by PAGUP) & Boost your "
 "ranking on search engines."
@@ -900,15 +1074,15 @@ msgstr ""
 "Optimice su Robots.txt con Better Robots.txt (hecho por PAGUP) y aumente su "
 "clasificación en los motores de búsqueda."
 
-#: inc\sidebar.php:14 premium\app-ads-txt-premium\inc\sidebar.php:14
+#: inc/sidebar.php:14 premium/app-ads-txt-premium/inc/sidebar.php:14
 msgid "Try Better Robots.txt &raquo;"
 msgstr "Pruebe Better Robots.txt »"
 
-#: inc\sidebar.php:18 premium\app-ads-txt-premium\inc\sidebar.php:18
+#: inc/sidebar.php:18 premium/app-ads-txt-premium/inc/sidebar.php:18
 msgid "Optimize your ALT TEXT"
 msgstr "Optimiza tu TEXTO ALT"
 
-#: inc\sidebar.php:19 premium\app-ads-txt-premium\inc\sidebar.php:19
+#: inc/sidebar.php:19 premium/app-ads-txt-premium/inc/sidebar.php:19
 msgid ""
 "Auto optimize all image alt texts (including Woocommerce online store), of "
 "your pages, posts & product, from Yoast SEO optimization settings (keywords) "
@@ -919,15 +1093,15 @@ msgstr ""
 "productos, desde la configuración de optimización de Yoast SEO (palabras "
 "clave) y / o el título de la publicación."
 
-#: inc\sidebar.php:20 premium\app-ads-txt-premium\inc\sidebar.php:20
+#: inc/sidebar.php:20 premium/app-ads-txt-premium/inc/sidebar.php:20
 msgid "Get BIALTY by Pagup &raquo;"
 msgstr "Obtenga BIALTY por Pagup »"
 
-#: inc\sidebar.php:24 premium\app-ads-txt-premium\inc\sidebar.php:24
+#: inc/sidebar.php:24 premium/app-ads-txt-premium/inc/sidebar.php:24
 msgid "Instant Mobile Viewer"
 msgstr "Visor móvil instantáneo"
 
-#: inc\sidebar.php:25 premium\app-ads-txt-premium\inc\sidebar.php:25
+#: inc/sidebar.php:25 premium/app-ads-txt-premium/inc/sidebar.php:25
 msgid ""
 "Instant mobile view of website (pages, posts, products) for responsive web "
 "design on phone (+ dualscreen). This plugin also offers helpful tools on "
@@ -939,89 +1113,107 @@ msgstr ""
 "complemento también ofrece herramientas útiles en cada página, como Facebook "
 "Debugger, LinkedIn Post Inspector y Google Mobile-Friendly Test Tool."
 
-#: inc\sidebar.php:26 premium\app-ads-txt-premium\inc\sidebar.php:26
+#: inc/sidebar.php:26 premium/app-ads-txt-premium/inc/sidebar.php:26
 msgid "Get Mobilook by Pagup &raquo;"
 msgstr "Obtenga Mobilook por Pagup »"
 
-#: inc\sidebar.php:30 premium\app-ads-txt-premium\inc\sidebar.php:30
+#: inc/sidebar.php:30 premium/app-ads-txt-premium/inc/sidebar.php:30
 msgid "Boost your Local SEO"
 msgstr "Mejora tu SEO local"
 
-#: inc\sidebar.php:31 premium\app-ads-txt-premium\inc\sidebar.php:31
+#: inc/sidebar.php:31 premium/app-ads-txt-premium/inc/sidebar.php:31
 msgid ""
 "Embed Google Street View (+ Virtual tour) with Google Maps (sync) and Local "
 "SEO structured data. Try WP Google Street View plugin with unique Local "
 "Business data Markup (machine-readable language of JSON-LD)"
-msgstr "Inserta Google Street View (+ tour virtual) con Google Maps (sincronización) y datos estructurados de SEO local. Prueba el plugin WP Google Street View con marcado Local Business único (lenguaje legible por máquinas JSON-LD)"
+msgstr ""
+"Inserta Google Street View (+ tour virtual) con Google Maps (sincronización) "
+"y datos estructurados de SEO local. Prueba el plugin WP Google Street View "
+"con marcado Local Business único (lenguaje legible por máquinas JSON-LD)"
 
-#: inc\sidebar.php:32 premium\app-ads-txt-premium\inc\sidebar.php:32
+#: inc/sidebar.php:32 premium/app-ads-txt-premium/inc/sidebar.php:32
 msgid "Get WP Google Street View &raquo;"
 msgstr "Obtener WP Google Street View &raquo;"
 
-#: inc\youtube-trans.php:3
+#: inc/youtube-trans.php:3
 msgid "Method 1: Generate Transcript of a YouTube Video"
 msgstr "Método 1: generar la transcripción de un video de YouTube"
 
-#: inc\youtube-trans.php:5
+#: inc/youtube-trans.php:5
 msgid "Go to YouTube and open the video of your choice."
 msgstr "Ve a YouTube y abre el video que prefieras."
 
-#: inc\youtube-trans.php:6
+#: inc/youtube-trans.php:6
 msgid ""
 "Click on the More actions button (represented by 3 horizontal dots) located "
 "next to the Share button"
-msgstr "Haz clic en el botón Más acciones (representado por 3 puntos horizontales) situado junto al botón Compartir"
+msgstr ""
+"Haz clic en el botón Más acciones (representado por 3 puntos horizontales) "
+"situado junto al botón Compartir"
 
-#: inc\youtube-trans.php:7
+#: inc/youtube-trans.php:7
 msgid "Now click on the Transcript option"
 msgstr "Ahora haz clic en la opción Transcripción"
 
-#: inc\youtube-trans.php:8
+#: inc/youtube-trans.php:8
 msgid "A transcript of the closed captions will automatically be generated"
 msgstr "Se generará automáticamente una transcripción de los subtítulos"
 
-#: inc\youtube-trans.php:9
+#: inc/youtube-trans.php:9
 msgid ""
 "Copy the content and paste it to Vidseo FREE editior or Vidseo PRO visual "
 "editor."
-msgstr "Copia el contenido y pégalo en el editor Vidseo FREE o en el editor visual Vidseo PRO."
+msgstr ""
+"Copia el contenido y pégalo en el editor Vidseo FREE o en el editor visual "
+"Vidseo PRO."
 
-#: inc\youtube-trans.php:12
+#: inc/youtube-trans.php:12
 msgid "Method 2: Diycaptions- YouTube video captions and subtitles"
 msgstr "Método 2: Diycaptions, subtítulos y leyendas para videos de YouTube"
 
-#: inc\youtube-trans.php:13
+#: inc/youtube-trans.php:13
 msgid ""
 "This second method is quite simple and easy to use. It is third-party "
 "software and doesn’t affiliate with YouTube, plus free to use."
-msgstr "Este segundo método es bastante simple y fácil de usar. Es un software de terceros, no está afiliado a YouTube y además es gratuito."
+msgstr ""
+"Este segundo método es bastante simple y fácil de usar. Es un software de "
+"terceros, no está afiliado a YouTube y además es gratuito."
 
-#: inc\youtube-trans.php:16
+#: inc/youtube-trans.php:16
 msgid "Step 1: Go to the DIY Captions website: https://www.diycaptions.com/"
 msgstr "Paso 1: ve al sitio web de DIY Captions: https://www.diycaptions.com/"
 
-#: inc\youtube-trans.php:17
+#: inc/youtube-trans.php:17
 msgid ""
 "Step 2: Enter the YouTube video URL in the given box and to get the full "
 "text of the audio click on Get Text button."
-msgstr "Paso 2: introduce la URL del video de YouTube en el cuadro indicado y haz clic en el botón Get Text para obtener el texto completo del audio."
+msgstr ""
+"Paso 2: introduce la URL del video de YouTube en el cuadro indicado y haz "
+"clic en el botón Get Text para obtener el texto completo del audio."
 
-#: inc\youtube-trans.php:18
+#: inc/youtube-trans.php:18
 msgid ""
 "Step3 : Copy the content and paste it to Vidseo FREE edition or Vidseo PRO "
 "visual editor."
-msgstr "Paso 3: copia el contenido y pégalo en la edición Vidseo FREE o en el editor visual Vidseo PRO."
+msgstr ""
+"Paso 3: copia el contenido y pégalo en la edición Vidseo FREE o en el editor "
+"visual Vidseo PRO."
 
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc__premium_only.php:70
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc__premium_only.php:70
 msgid ""
 "Your direct demand partners should be listed as \"direct.\" If your partners "
 "are using third-party resellers to sell your inventory, such providers "
 "should be listed as \"reseller.\" In any case, you should not add any "
 "provider to your app-ads.txt file unless you or your partner have a direct "
 "relationship with them."
-msgstr "Tus socios de demanda directa deben figurar como \"direct\". Si tus socios usan revendedores externos para vender tu inventario, esos proveedores deben figurar como \"reseller\". En cualquier caso, no añadas ningún proveedor a tu archivo app-ads.txt a menos que tú o tu socio tengáis una relación directa con él."
+msgstr ""
+"Tus socios de demanda directa deben figurar como \"direct\". Si tus socios "
+"usan revendedores externos para vender tu inventario, esos proveedores deben "
+"figurar como \"reseller\". En cualquier caso, no añadas ningún proveedor a "
+"tu archivo app-ads.txt a menos que tú o tu socio tengáis una relación "
+"directa con él."
 
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc__premium_only.php:138
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc__premium_only.php:138
 msgid ""
 "Your direct demand partners should be listed as “direct.” If your partners "
 "are using third-party resellers to sell your inventory, such providers "
@@ -1035,15 +1227,15 @@ msgstr ""
 "agregar ningún proveedor a su archivo app-ads.txt a menos que usted o su "
 "socio tengan una relación directa con ellos."
 
-#: premium\app-ads-txt-premium\admin-ui-inc\app-ads-txt-inc__premium_only.php:171
+#: premium/app-ads-txt-premium/admin-ui-inc/app-ads-txt-inc__premium_only.php:171
 msgid "OR"
 msgstr "O"
 
-#: premium\app-ads-txt-premium\inc\recommendations.php:81
+#: premium/app-ads-txt-premium/inc/recommendations.php:81
 msgid "WP-Optimize by David Anderson, Ruhani Rabin, Team Updraft"
 msgstr "WP-Optimize por David Anderson, Ruhani Rabin, Team Updraft"
 
-#: premium\app-ads-txt-premium\inc\recommendations.php:82
+#: premium/app-ads-txt-premium/inc/recommendations.php:82
 msgid ""
 "WP-Optimize is WordPress's most-installed optimization plugin. With it, you "
 "can clean up your database easily and safely, without manual queries."
@@ -1052,13 +1244,13 @@ msgstr ""
 "Con él, puede limpiar su base de datos de manera fácil y segura, sin "
 "consultas manuales."
 
-#: premium\app-ads-txt-premium\inc\recommendations.php:87
+#: premium/app-ads-txt-premium/inc/recommendations.php:87
 msgid "WordPress Share Buttons Plugin – AddThis By The AddThis Team"
 msgstr ""
 "Complemento de botones para compartir de WordPress - AddThis por el equipo "
 "de AddThis"
 
-#: premium\app-ads-txt-premium\inc\recommendations.php:88
+#: premium/app-ads-txt-premium/inc/recommendations.php:88
 msgid ""
 "Share buttons from AddThis help you get more traffic from sharing through "
 "social networks."
@@ -1066,12 +1258,12 @@ msgstr ""
 "Los botones de compartir de AddThis lo ayudan a obtener más tráfico al "
 "compartir a través de las redes sociales."
 
-#: premium\app-ads-txt-premium\inc\recommendations.php:93
+#: premium/app-ads-txt-premium/inc/recommendations.php:93
 msgid "WP-SpamShield WordPress Anti-Spam Plugin by Red Sand Media Group"
 msgstr ""
 "Complemento antispam para WordPress WP-SpamShield de Red Sand Media Group"
 
-#: premium\app-ads-txt-premium\inc\recommendations.php:94
+#: premium/app-ads-txt-premium/inc/recommendations.php:94
 msgid ""
 "WP-SpamShield is a leading WordPress anti-spam plugin that stops spam "
 "instantly and improves your site's security. "
@@ -1079,11 +1271,11 @@ msgstr ""
 "WP-SpamShield es un complemento antispam de WordPress líder que detiene el "
 "spam instantáneamente y mejora la seguridad de su sitio."
 
-#: premium\app-ads-txt-premium\inc\recommendations.php:99
+#: premium/app-ads-txt-premium/inc/recommendations.php:99
 msgid "OneSignal – Free Web Push Notifications By OneSignal"
 msgstr "OneSignal: notificaciones push web gratuitas de OneSignal"
 
-#: premium\app-ads-txt-premium\inc\recommendations.php:100
+#: premium/app-ads-txt-premium/inc/recommendations.php:100
 msgid ""
 "Increase engagement and drive more repeat traffic to your WordPress site "
 "with desktop push notifications. Now supporting Chrome, Firefox, and Safari."
@@ -1092,11 +1284,11 @@ msgstr ""
 "WordPress con notificaciones push de escritorio. Ahora es compatible con "
 "Chrome, Firefox y Safari."
 
-#: premium\app-ads-txt-premium\inc\recommendations.php:105
+#: premium/app-ads-txt-premium/inc/recommendations.php:105
 msgid "WPfomify - Social Proof & FOMO Marketing Plugin"
 msgstr "WPfomify - Complemento de marketing de prueba social y FOMO"
 
-#: premium\app-ads-txt-premium\inc\recommendations.php:106
+#: premium/app-ads-txt-premium/inc/recommendations.php:106
 msgid ""
 "WPfomify increases conversion rates on your websites by displaying recent "
 "interaction, sales and sign-ups"
@@ -1104,11 +1296,11 @@ msgstr ""
 "WPfomify aumenta las tasas de conversión en sus sitios web al mostrar "
 "interacciones, ventas y registros recientes"
 
-#: premium\app-ads-txt-premium\inc\recommendations.php:111
+#: premium/app-ads-txt-premium/inc/recommendations.php:111
 msgid "Recart - Abandoned Cart Toolbox"
 msgstr "Recart - Caja de herramientas de carrito abandonado"
 
-#: premium\app-ads-txt-premium\inc\recommendations.php:112
+#: premium/app-ads-txt-premium/inc/recommendations.php:112
 msgid ""
 "Recart Messenger Marketing and Abandoned Cart Toolbox is a All in one cart "
 "recovery marketing tools for ecommerce solution"
@@ -1117,14 +1309,14 @@ msgstr ""
 "marketing de recuperación de carrito todo en uno para una solución de "
 "comercio electrónico"
 
-#: premium\app-ads-txt-premium\inc\recommendations.php:117
+#: premium/app-ads-txt-premium/inc/recommendations.php:117
 msgid "Wp-Roket - Probably the best caching Plugin for WordPress"
 msgstr ""
 "Wp-Roket: probablemente el mejor complemento de almacenamiento en caché para "
 "WordPress"
 
-#: premium\app-ads-txt-premium\inc\recommendations.php:118
-#: premium\app-ads-txt-premium\inc\recommendations.php:136
+#: premium/app-ads-txt-premium/inc/recommendations.php:118
+#: premium/app-ads-txt-premium/inc/recommendations.php:136
 msgid ""
 "Speed up your WordPress website, more traffic, conversions and money with WP "
 "Rocket caching plugin."
@@ -1132,11 +1324,11 @@ msgstr ""
 "Acelere su sitio web de WordPress, más tráfico, conversiones y dinero con el "
 "complemento de almacenamiento en caché WP Rocket."
 
-#: premium\app-ads-txt-premium\inc\recommendations.php:123
+#: premium/app-ads-txt-premium/inc/recommendations.php:123
 msgid "Nofollow for external link By CyberNetikz"
 msgstr "Nofollow para enlace externo por CyberNetikz"
 
-#: premium\app-ads-txt-premium\inc\recommendations.php:124
+#: premium/app-ads-txt-premium/inc/recommendations.php:124
 msgid ""
 "Automatically insert rel=nofollow and target=_blank to all the external "
 "links into your website posts, pages or menus. Support exclude domain."
@@ -1145,11 +1337,11 @@ msgstr ""
 "enlaces externos en las publicaciones, páginas o menús de su sitio web. "
 "Soporte excluir dominio."
 
-#: premium\app-ads-txt-premium\inc\recommendations.php:129
+#: premium/app-ads-txt-premium/inc/recommendations.php:129
 msgid "Google Reviews Widget By RichPlugins"
 msgstr "Widget de reseñas de Google de RichPlugins"
 
-#: premium\app-ads-txt-premium\inc\recommendations.php:130
+#: premium/app-ads-txt-premium/inc/recommendations.php:130
 msgid ""
 "Google Reviews Widget show Google Places Reviews on your WordPress website "
 "to increase user confidence and SEO."
@@ -1157,16 +1349,16 @@ msgstr ""
 "El widget de reseñas de Google muestra reseñas de Google Places en su sitio "
 "web de WordPress para aumentar la confianza del usuario y el SEO."
 
-#: premium\app-ads-txt-premium\inc\recommendations.php:135
+#: premium/app-ads-txt-premium/inc/recommendations.php:135
 msgid "WP Chatbot for facebook Messenger customer chat By HoliThemes"
 msgstr ""
 "WP Chatbot para el chat de clientes de Facebook Messenger Por HoliThemes"
 
-#: premium\app-ads-txt-premium\inc\recommendations.php:141
+#: premium/app-ads-txt-premium/inc/recommendations.php:141
 msgid "WP Google My Business Auto Publish By Martin Gibson"
 msgstr "WP Google My Business Auto Publish por Martin Gibson"
 
-#: premium\app-ads-txt-premium\inc\recommendations.php:142
+#: premium/app-ads-txt-premium/inc/recommendations.php:142
 msgid ""
 "WP Google My Business Auto Publish lets you publish posts, custom posts and "
 "pages automatically from WordPress to your Google My Business page."
@@ -1175,11 +1367,11 @@ msgstr ""
 "publicaciones personalizadas y páginas automáticamente desde WordPress a tu "
 "página de Google My Business."
 
-#: premium\app-ads-txt-premium\inc\recommendations.php:147
+#: premium/app-ads-txt-premium/inc/recommendations.php:147
 msgid "WP Search Console"
 msgstr "Consola de búsqueda de WP"
 
-#: premium\app-ads-txt-premium\inc\recommendations.php:148
+#: premium/app-ads-txt-premium/inc/recommendations.php:148
 msgid ""
 "A new way to boost your marketing content. Writing Web Content that is "
 "ranking like those of SEO Experts."
@@ -1187,7 +1379,7 @@ msgstr ""
 "Una nueva forma de potenciar su contenido de marketing. Redacción de "
 "contenido web que se clasifica como los de los expertos en SEO."
 
-#: premium\app-ads-txt-premium\inc\recommendations.php:156
+#: premium/app-ads-txt-premium/inc/recommendations.php:156
 msgid "Awesome plugins for SEO & Conversion performance:"
 msgstr "Complementos increíbles para el rendimiento de SEO y conversión:"
 

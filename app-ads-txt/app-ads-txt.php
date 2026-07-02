@@ -4,7 +4,7 @@
 * Plugin Name: Ads.txt & App-ads.txt Manager
 * Description: App-ads.txt & Ads.txt manager allows you to create, manage & publish your app-ads.txt & ads.txt files from your WordPress dashboard.
 * Author: Pagup
-* Version: 1.1.11
+* Version: 1.1.12
 * Author URI: https://pagup.com/
 * Text Domain: app-ads-txt
 * Domain Path: /languages/
@@ -122,8 +122,9 @@ if ( function_exists( 'adtm__fs' ) ) {
         // removed settings (if checked) on plugin deactivation
         function adtm__deactivate() {
             $adtm__options = $this->adtm__options();
-            if ( $adtm__options['remove_settings'] ) {
+            if ( is_array( $adtm__options ) && ! empty( $adtm__options['remove_settings'] ) ) {
                 delete_option( 'app-ads-txt' );
+                delete_option( 'app_ads_txt_evidence_v01' );
             }
         }
 
@@ -213,6 +214,9 @@ if ( function_exists( 'adtm__fs' ) ) {
             exit;
         }
     }
+
+    // Evidence parser module (no runtime scan or UI side effects in v0.1).
+    include_once dirname( __FILE__ ) . '/inc/evidence/bootstrap.php';
 
     // admin notifications
     include_once dirname( __FILE__ ) . '/inc/notices.php';
