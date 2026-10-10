@@ -35,17 +35,18 @@ class App_Ads_Validator {
 		$seen = array();
 		$has_ownerdomain = false;
 		$has_managerdomain = false;
-		$lines = preg_split( '/\r\n|\r|\n/', (string) $content );
+		$lines = $this->split_lines( $content );
 
 		foreach ( $lines as $index => $raw_line ) {
 			$line_number = $index + 1;
-			$trimmed = trim( $this->strip_inline_comment( $raw_line ) );
+			$normalized_line = 1 === $line_number ? $this->strip_utf8_bom( $raw_line ) : $raw_line;
+			$trimmed = trim( $this->strip_inline_comment( $normalized_line ) );
 
 			if ( '' === $trimmed ) {
 				continue;
 			}
 
-			if ( false !== strpos( $trimmed, '=' ) && false === strpos( $trimmed, ',' ) ) {
+			if ( $this->is_variable_line( $trimmed ) ) {
 				$variable_observation = $this->validate_variable( $file_name, $prefix, $line_number, $trimmed, $raw_line, $url );
 
 				if ( 'OWNERDOMAIN' === $variable_observation['key'] ) {
@@ -326,6 +327,34 @@ class App_Ads_Validator {
 		return substr( $line, 0, $comment_position );
 	}
 
+	private function strip_utf8_bom( $line ) {
+		if ( 0 === strncmp( $line, "\xEF\xBB\xBF", 3 ) ) {
+			return substr( $line, 3 );
+		}
+
+		return $line;
+	}
+
+	private function split_lines( $content ) {
+		$content = (string) $content;
+
+		if ( '' === $content ) {
+			return array();
+		}
+
+		$lines = preg_split( '/\r\n|\r|\n/', $content );
+
+		if ( count( $lines ) > 1 && '' === end( $lines ) ) {
+			array_pop( $lines );
+		}
+
+		return $lines;
+	}
+
+	private function is_variable_line( $line ) {
+		return 1 === preg_match( '/^[A-Za-z][A-Za-z0-9_-]*\s*=/', $line );
+	}
+
 	private function parse_record_line( $line ) {
 		$fields = array_map( 'trim', explode( ',', $line ) );
 		$count = count( $fields );
@@ -344,13 +373,29 @@ class App_Ads_Validator {
 			);
 		}
 
+		$relation = $this->primary_field_value( $fields[2] );
+		$cert = isset( $fields[3] ) ? $this->primary_field_value( $fields[3] ) : '';
+
+		if ( '' === $relation ) {
+			return array(
+				'valid'  => false,
+				'reason' => 'empty_required_field',
+			);
+		}
+
 		return array(
 			'valid'     => true,
 			'domain'    => $fields[0],
 			'publisher' => $fields[1],
-			'relation'  => $fields[2],
-			'cert'      => isset( $fields[3] ) ? $fields[3] : '',
+			'relation'  => $relation,
+			'cert'      => $cert,
 		);
+	}
+
+	private function primary_field_value( $field ) {
+		$parts = explode( ';', (string) $field, 2 );
+
+		return trim( $parts[0] );
 	}
 
 	private function duplicate_key( $record ) {

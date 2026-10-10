@@ -691,3 +691,36 @@
 hr {
     margin: 25px 0;
 }
+/* Keep the settings form and help text usable on WordPress mobile admin. */
+@media (max-width: 782px) {
+    .adtm-containter .adtm-column {
+        float: none;
+        width: 100%;
+        min-width: 0;
+    }
+    .adtm-containter .adtm-main { padding: 12px; }
+    .adtm-containter .adtm-sidebar { padding: 0; }
+    .adtm-containter .adtm-table,
+    .adtm-containter .adtm-table tbody,
+    .adtm-containter .adtm-table tr,
+    .adtm-containter .adtm-table td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .adtm-containter .adtm-table td { padding: 8px 0; }
+    .adtm-containter .adtm-tabs ul.tabs li { padding: 12px; font-size: 16px; }
+    .adtm-containter .adtm-tooltip .adtm-tooltiptext {
+        display: none;
+        position: fixed;
+        left: 16px;
+        right: 16px;
+        top: auto;
+        width: auto;
+        max-height: 50vh;
+        overflow: auto;
+        box-sizing: border-box;
+    }
+    .adtm-containter .adtm-tooltip:hover .adtm-tooltiptext,
+    .adtm-containter .adtm-tooltip:focus-within .adtm-tooltiptext { display: block; visibility: visible; }
+}
